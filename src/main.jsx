@@ -16,6 +16,9 @@ import ProtectedCheck from "./components/ProtectedCheck.jsx";
 import ProtectedCheckChildren from "./components/ProtectedCheckChildren.jsx";
 import Profile from "./pages/Profile.jsx";
 import { ProtectedGeneral } from "./components/ProtectedGeneral.jsx";
+import MobileDevs from './pages/MobileDevs/MobileDevs.jsx'
+import Apps_inMobileDev from "./pages/Apps_inMobileDev/Apps_inMobileDev.jsx";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter basename="/">
@@ -25,6 +28,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             {/* No tienen proteccion de rutas */}
             <Route index element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/mobileDevs" element={<MobileDevs />} />
+            <Route
+              path="/mobileDev/apps"
+              element={<Apps_inMobileDev />}
+            />
             <Route path="/register" element={<Register />} />
             <Route
               path="/profile"

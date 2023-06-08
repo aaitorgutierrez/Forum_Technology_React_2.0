@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { useAuth } from "../contexts/authContext";
 import { useEffect } from "react";
+import MobileDevs from '../pages/MobileDevs/MobileDevs'
 
 const Header = () => {
   const { user, logout } = useAuth();
@@ -42,12 +43,10 @@ const Header = () => {
             </NavLink>
           ) : null}
 
-          <NavLink to="/">
-            <img
-              src="https://res.cloudinary.com/dq186ej4c/image/upload/v1685705455/home_circle_outline_icon_139029_xdnnt2.png"
-              alt=""
-              className="iconNav home"
-            />
+          <NavLink to="/mobileDevs">
+            <button className="btn-mobileDev">
+              MobileDevs
+            </button>
           </NavLink>
 
           {user !== null && (

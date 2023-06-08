@@ -1,0 +1,36 @@
+.cardAppInMobileDev-Data {
+    width: 750px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid purple;
+    border-radius: 1rem;
+    /* background-color: aliceblue; */
+}
+
+.cardAppInMobileDev-Info>p {
+    font-size: 20px;
+}
+
+.cardAppInMobileDev-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5px;
+    border: 1px solid purple;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin: 1rem;
+}
+
+.cardAppInMobileDev-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
