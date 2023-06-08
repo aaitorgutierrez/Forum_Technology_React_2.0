@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Toggle.css";
 import { mobilDev_Toggle } from "../../services/API_proyect/mobileDev.service";
 
@@ -18,7 +18,6 @@ const ToggleButton = ({ mobileDevId }) => {
       console.error("Error while adding to favorites", error);
     }
   };
-
   return (
     <button onClick={handleAddToFavorites}>
       {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
