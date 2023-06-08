@@ -1,28 +1,28 @@
-.mobileDev-Info>p {
-    font-size: 24px;
+.mobileDev-Info > p {
+  font-size: 12px;
 }
 
 .mobileDev-Info {
-    width: 450px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 360px;
-    height: 450px;
-    border: 6px solid blueviolet;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    background-color: #e6e6fa;
-    color: black;
+  width: 600px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 450px;
+  border: 6px solid blueviolet;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: #e6e6fa;
+  color: black;
 }
 
-.mobileDev-Info>img {
-    width: 100px;
-    height: 100px;
-    object-fit: scale-down;
-    margin-top: 0.3rem;
+.mobileDev-Info > img {
+  width: 100px;
+  height: 100px;
+  object-fit: scale-down;
+  margin-top: 0.3rem;
 }
 
 /* .appInfo {
