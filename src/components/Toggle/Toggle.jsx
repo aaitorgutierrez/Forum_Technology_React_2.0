@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { AiOutlineHeart, AiTwotoneHeart } from "react-icons/ai";
 import "./Toggle.css";
 import {
   mobilDev_Toggle,
@@ -36,8 +37,15 @@ const ToggleButton = ({ mobileDevId }) => {
   };
 
   return (
-    <button onClick={handleAddToFavorites}>
-      {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
+    <button
+      onClick={handleAddToFavorites}
+      className={`ToggleButtonMobileDev ${isFavorite ? "favorite" : ""}`}
+    >
+      {isFavorite ? (
+        <AiTwotoneHeart size={25} className="favorite-icon" />
+      ) : (
+        <AiOutlineHeart size={25} className="favorite-icon" />
+      )}
     </button>
   );
 };

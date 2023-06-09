@@ -25,9 +25,7 @@
   margin-top: 0.3rem;
 }
 
-/* .appInfo {
-    border: 1px solid blue;
-    border-radius: 1rem;
-    margin: 1rem;
-    padding: 1rem;
-} */
+.button-Holder {
+  display: flex;
+  gap: 13rem;
+}

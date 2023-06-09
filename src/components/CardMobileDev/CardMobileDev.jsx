@@ -15,7 +15,7 @@ export const CardMobileDev = ({ mobileDev }) => {
       <p>language: {mobileDev.language}</p>
       <p>description: {mobileDev.description}</p>
       <div className="button-Holder">
-        <ToggleButton mobileDevId={mobileDev._id} />
+        <ToggleButton className="ToggleMobileDev" mobileDevId={mobileDev._id} />
         <button
           onClick={() =>
             navigate(pathById, {
