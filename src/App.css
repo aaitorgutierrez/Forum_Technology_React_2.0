@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
-
 body {
   width: 100vw;
   min-height: 100vh;
 }
 
 #root {
+  --mainColor: #1b2430;
+  --mainColorLight: #5767aa;
+  --secondaryColor: green;
+  --textColor: #eee;
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -23,7 +29,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 .btn {

@@ -8,8 +8,8 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background: #000000;
-  color: #fff;
+  background: white;
+  color: var(--mainColor);
   line-height: 1.8;
 }
 

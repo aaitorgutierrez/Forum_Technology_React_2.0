@@ -1,8 +1,12 @@
 footer {
   height: 10vh;
   width: 100vw;
-  background-color: #2f7a67;
+  background-color: #1b2430;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--textColor);
+}
+.footerText {
+  color: var(--textColor);
 }

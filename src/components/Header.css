@@ -1,104 +1,178 @@
 header {
-  height: 20vh;
-  width: 100vw;
-  background-color: #2f7a67;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+.logoPlant {
+  width: 300px;
+}
+.navButton {
+  margin-left: 140%;
+}
+.titleWeb {
+  margin-left: 5px;
+}
+.buttonNav.active {
+  border: 2px solid var(--secondaryColor);
 }
 
-.btn-nav {
-  background-color: black;
-  height: 30px;
-  border-radius: 3px;
+.buttonNav {
+  background-color: transparent;
+  border: transparent;
+  letter-spacing: 5px;
+}
+
+.buttonNav:hover {
+  cursor: pointer;
+}
+
+.navHeader button {
+  margin: 0 1rem;
   color: white;
-  width: 113px;
-  margin: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease-in-out;
 }
-.titleHeaderBlack {
-  position: absolute;
-  color: white;
-  top: 2px;
-}
-
-.titleContainer {
-  color: #183f35;
-  width: 360px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.profileCircle {
+  height: 40px;
+  width: 40px;
+  filter: invert();
 }
 
-.titleFatherContainer {
-  color: #183f35;
-  width: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navHeader button:hover {
+  color: var(--secondaryColor);
 }
 
-.logo {
-  width: 100px;
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
 }
 
-.iconNav {
-  width: 60px;
-}
-
-.iconNav.home {
-  width: 60px;
-  transform: scale(1.2);
-}
-
+header div,
 nav {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.whiteContainer {
-  width: 100vw;
-  height: 1vh;
-  background-color: white;
+.dropdown .iconProfile {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.iconLogout {
-  transform: scale(0.8);
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border: solid 7px black;
-  border-radius: 50%;
-}
-
-.profileCircle {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: solid black 6px;
-}
-
-a {
+.dropdown-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.iconDashBoard {
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
+.dropdown-content a,
+.dropdown-content button {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
 }
 
-@media (max-width: 550px) {
-  header {
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .navButton {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  header .navHeader {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
   }
-  .logo {
-    width: 50px;
+  .profileCircle {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid black 6px;
   }
-  .titleFatherContainer {
-    width: 263px;
+  .iconLogout {
+    transform: scale(0.8);
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: solid 7px black;
+    border-radius: 50%;
+  }
+  .iconDashBoard {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+  .anchors {
+    margin-left: 0%;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav button {
+    font-size: 1.5rem;
   }
 }

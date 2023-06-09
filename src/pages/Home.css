@@ -4,4 +4,5 @@
 
 .homeContainer {
   max-width: 350px;
+  color: var(--mainColor);
 }

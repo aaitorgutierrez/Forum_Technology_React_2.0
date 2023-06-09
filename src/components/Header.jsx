@@ -1,80 +1,88 @@
 import { NavLink } from "react-router-dom";
+import { useState, useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+import { TbPlant2 } from "react-icons/tb";
 import "./Header.css";
 import { useAuth } from "../contexts/authContext";
-import { useEffect } from "react";
-import MobileDevs from "../pages/MobileDevs/MobileDevs";
-import Apps from "../pages/Apps/Apps";
 
 const Header = () => {
   const { user, logout } = useAuth();
+
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
+  const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
+
+  const handleProfileDropdown = () => {
+    setProfileDropdownOpen(!profileDropdownOpen);
+  };
 
   return (
     <>
       <header>
         <div className="titleFatherContainer">
-          <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1685704450/user-3296_rtszbc.png"
-            alt="logo"
-            className="logo"
-          />
-          <div className="titleContainer">
-            <h1 className="titleHeader">USER PAGE</h1>
-            <h1 className="titleHeaderBlack">USER PAGE</h1>
-          </div>
+          <TbPlant2 size={30} />
+          <h3 className="titleWeb">Digital Nexus</h3>
         </div>
 
-        <nav>
+        <nav className="navHeader" ref={navRef}>
           {user == null && (
-            <NavLink to="/login">
-              <img
-                src="https://res.cloudinary.com/dq186ej4c/image/upload/v1685705523/login_ljn9fb.png"
-                alt=""
-                className="iconNav"
-              />
+            <NavLink to="/login" activeClassName="active" exact>
+              <button className="iconNav">LogOut</button>
             </NavLink>
           )}
-
-          {user !== null && user?.check == true ? (
-            <NavLink to="/dashboard">
-              <img
-                src="https://res.cloudinary.com/dq186ej4c/image/upload/v1685705689/dashboard-statistics-5492_rnmxcl.png"
-                alt=""
-                className="iconNav iconDashBoard"
-              />
-            </NavLink>
-          ) : null}
-
-          <NavLink to="/mobileDevs">
-            <button className="btn-mobileDev">MobileDevs</button>
-          </NavLink>
-
-          <NavLink to="/apps">
-            <button className="btn-app">Apps</button>
-          </NavLink>
-
-          {user !== null && (
-            <img
-              src="https://res.cloudinary.com/dq186ej4c/image/upload/v1685706203/9e3c325bca17c2147d249237c5a0906b_qhqifa.png"
-              alt=""
-              className="iconNav iconLogout"
-              onClick={() => logout()}
-            />
-          )}
-
-          {user !== null && user?.check == true ? (
-            <>
-              <NavLink to="/profile">
-                <img
-                  className="profileCircle"
-                  src={user.image}
-                  alt={user.user}
-                />
+          <div className="navButton">
+            {user !== null && user?.check == true ? (
+              <NavLink to="/dashboard" activeClassName="active" exact>
+                <button className="buttonNav">Home</button>
               </NavLink>
-            </>
-          ) : null}
+            ) : null}
+
+            <NavLink to="/mobileDevs" activeClassName="active" exact>
+              <button className="buttonNav">MobileDevs</button>
+            </NavLink>
+
+            <NavLink to="/apps">
+              <button className="buttonNav" activeClassName="active" exact>
+                Apps
+              </button>
+            </NavLink>
+
+            {user !== null && (
+              <div className="dropdown">
+                <button
+                  className="iconNav iconProfile"
+                  onClick={handleProfileDropdown}
+                >
+                  <img
+                    className="profileCircle"
+                    src={user.image}
+                    alt={user.user}
+                  />
+                </button>
+                {profileDropdownOpen && (
+                  <div className="dropdown-content">
+                    <NavLink to="/profile">Profile</NavLink>
+                    <button className="buttonNavDown" onClick={() => logout()}>
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+              <FaTimes />
+            </button>
+          </div>
         </nav>
+        <button className="nav-btn" onClick={showNavbar}>
+          <FaBars />
+        </button>
       </header>
-      <div className="whiteContainer"></div>
     </>
   );
 };
