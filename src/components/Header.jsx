@@ -48,6 +48,10 @@ const Header = () => {
               <button className="buttonNav">MobileDevs Favorites</button>
             </NavLink>
 
+            <NavLink to="/appsFavorites">
+              <button className="buttonNav">Apps Favorites</button>
+            </NavLink>
+
             {user && (
               <div className="dropdown">
                 <button
