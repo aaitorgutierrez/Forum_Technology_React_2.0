@@ -23,7 +23,7 @@ export const CardApp = ({ app }) => {
             })
           }
         >
-          Show Mobile!
+          Show Mobiles!
         </button>
       </div>
     </div>
