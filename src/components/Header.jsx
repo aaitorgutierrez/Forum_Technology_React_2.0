@@ -49,6 +49,10 @@ const Header = () => {
               <button className="buttonNav">Apps</button>
             </NavLink>
 
+            <NavLink to="/mobileDevsFavorites">
+              <button className="buttonNav">MobileDevs Favorites</button>
+            </NavLink>
+
             {user !== null && (
               <div className="dropdown">
                 <button
