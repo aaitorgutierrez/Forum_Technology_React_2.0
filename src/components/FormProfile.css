@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2f7a67;
+  background-color: var(--mainColor);
   max-width: 1000px;
   margin-top: 2rem;
   border-radius: 20px;

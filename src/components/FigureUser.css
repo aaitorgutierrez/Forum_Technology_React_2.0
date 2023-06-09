@@ -8,6 +8,7 @@
 
 .emailUser {
   text-align: center;
+  color: var(--textColor);
 }
 
 .dataProfile {
