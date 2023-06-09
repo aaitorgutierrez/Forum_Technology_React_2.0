@@ -30,25 +30,23 @@ const Header = () => {
 
         <nav className="navHeader" ref={navRef}>
           {user == null && (
-            <NavLink to="/login" activeClassName="active" exact>
+            <NavLink to="/login">
               <button className="iconNav">LogOut</button>
             </NavLink>
           )}
           <div className="navButton">
             {user !== null && user?.check == true ? (
-              <NavLink to="/dashboard" activeClassName="active" exact>
+              <NavLink to="/dashboard">
                 <button className="buttonNav">Home</button>
               </NavLink>
             ) : null}
 
-            <NavLink to="/mobileDevs" activeClassName="active" exact>
+            <NavLink to="/mobileDevs">
               <button className="buttonNav">MobileDevs</button>
             </NavLink>
 
             <NavLink to="/apps">
-              <button className="buttonNav" activeClassName="active" exact>
-                Apps
-              </button>
+              <button className="buttonNav">Apps</button>
             </NavLink>
 
             {user !== null && (
