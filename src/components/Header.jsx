@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { useAuth } from "../contexts/authContext";
 import { useEffect } from "react";
-import MobileDevs from '../pages/MobileDevs/MobileDevs'
+import MobileDevs from "../pages/MobileDevs/MobileDevs";
+import Apps from "../pages/Apps/Apps";
 
 const Header = () => {
   const { user, logout } = useAuth();
@@ -44,9 +45,11 @@ const Header = () => {
           ) : null}
 
           <NavLink to="/mobileDevs">
-            <button className="btn-mobileDev">
-              MobileDevs
-            </button>
+            <button className="btn-mobileDev">MobileDevs</button>
+          </NavLink>
+
+          <NavLink to="/apps">
+            <button className="btn-app">Apps</button>
           </NavLink>
 
           {user !== null && (
