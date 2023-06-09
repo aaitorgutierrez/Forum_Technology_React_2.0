@@ -6,6 +6,7 @@ export const CardMobileDev = ({ mobileDev }) => {
   const navigate = useNavigate();
   const pathById = `/mobileDev/apps`;
 
+  console.log('mobileDev: ', mobileDev)
   return (
     <div className="mobileDev-Info">
       <img src={mobileDev.image} alt={`mobileDev's ${mobileDev.brand} pic`} />
