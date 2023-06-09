@@ -16,7 +16,13 @@ header {
 .navButton {
   margin-left: 80%;
 }
-
+.ProfileNav {
+  font-size: 150;
+}
+.buttonNavDown {
+  background-color: transparent;
+  border: transparent;
+}
 .titleWeb {
   margin-left: 5px;
 }

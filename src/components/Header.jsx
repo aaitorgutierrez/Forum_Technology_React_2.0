@@ -62,7 +62,9 @@ const Header = () => {
                 </button>
                 {profileDropdownOpen && (
                   <div className="dropdown-content">
-                    <NavLink to="/profile">Profile</NavLink>
+                    <NavLink to="/profile" className="ProfileNav">
+                      Profile
+                    </NavLink>
                     <button className="buttonNavDown" onClick={() => logout()}>
                       Logout
                     </button>
