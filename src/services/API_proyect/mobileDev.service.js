@@ -18,7 +18,7 @@ export const mobileDev_getById = async (id) => {
       return error;
     });
 };
-
+// ----------------- Get MobileDev FAV -----------
 export const mobilDev_Toggle = async (id, formData) => {
   return API.put(`/mobilesDev/favorite/${id}`, formData, {
     headers: {
@@ -26,6 +26,18 @@ export const mobilDev_Toggle = async (id, formData) => {
     },
   })
     .then((res) => res.data)
+    .catch((error) => {
+      return error;
+    });
+};
+// ----------------- Get Status Fav -----------
+export const getFavoriteStatus = async (id) => {
+  return API.get(`/mobilesDev/favoriteStatus/${id}`, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res.data.isFavorite)
     .catch((error) => {
       return error;
     });
