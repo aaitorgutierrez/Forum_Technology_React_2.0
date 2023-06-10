@@ -68,10 +68,12 @@ const FormProfile = () => {
           <FigureUser user={user} />
         </div>
         <div className="form-wrap formProfile">
-          <h1>Change your data profile ♻</h1>
-          <p>Please, enter your new data profile</p>
+          <p className="formProfile-text-new-profile">Your new profile</p>
           <form onSubmit={handleSubmit(formSubmit)}>
             <div className="user_container form-group">
+              <label htmlFor="custom-input" className="custom-placeholder">
+                username
+              </label>
               <input
                 className="input_user"
                 type="text"
@@ -81,9 +83,7 @@ const FormProfile = () => {
                 defaultValue={defaultData?.name}
                 {...register("name", { required: true })}
               />
-              <label htmlFor="custom-input" className="custom-placeholder">
-                username
-              </label>
+
             </div>
             <Uploadfile />
             <div className="btn_container">
@@ -91,9 +91,10 @@ const FormProfile = () => {
                 className="btn"
                 type="submit"
                 disabled={send}
+                // style={{ background: send ? "#49c1a388" : "#49c1a2" }}
                 style={{ background: send ? "#49c1a388" : "#49c1a2" }}
               >
-                CHANGE DATA PROFILE
+                CHANGE PROFILE
               </button>
             </div>
           </form>
