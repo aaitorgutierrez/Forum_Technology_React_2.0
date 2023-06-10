@@ -15,6 +15,9 @@
 }
 
 .btn-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 190px;
   background-color: var(--mainColor);
   color: var(--textColor);
@@ -23,6 +26,7 @@
   height: 35px;
   font-size: medium;
 }
+
 .btn-profile:hover {
   color: var(--secondaryColor);
 }
@@ -37,6 +41,7 @@
     height: 30px;
     font-weight: bold;
   }
+
   .containerNavProfile {
     height: 12vh;
     display: flex;

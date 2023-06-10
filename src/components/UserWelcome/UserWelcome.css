@@ -1,4 +1,4 @@
-.registerNote-container {
+.userWelcome-container {
     width: 55vw;
     height: 60vh;
     display: flex;
@@ -12,22 +12,22 @@
     gap: 0.5rem;
 }
 
-.registerNote-welcome-text {
+.userWelcome-welcome-text {
     font-size: 25px;
 }
 
-.registerNote-logo {
+.userWelcome-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
 
-.registerNote-please-text {
+.userWelcome-info-text {
     font-size: 20px;
 }
 
-.registerNote-login-btn {
+.userWelcome-login-btn {
     width: 55%;
     background-color: var(--mainColor);
     color: var(--textColor);
@@ -35,11 +35,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .registerNote-container {
+    .userWelcome-container {
         width: 80vw;
     }
 
-    .registerNote-welcome-text {
+    .userWelcome-welcome-text {
         font-size: 25px;
     }
 }

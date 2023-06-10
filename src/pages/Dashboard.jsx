@@ -1,7 +1,7 @@
 import "./Dashboard.css";
+import UserWelcome from "../components/UserWelcome/UserWelcome";
 
-const Dashboard = () => {
-  return <div className="dashboard">Dashboard</div>;
-};
+const Dashboard = () =>
+  <UserWelcome />
 
 export default Dashboard;
