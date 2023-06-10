@@ -1,45 +1,45 @@
 .userWelcome-container {
-    width: 55vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #e3e4e5;
-    border: 1px solid black;
-    padding: 1rem;
-    gap: 0.5rem;
+  width: 55vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e3e4e5;
+  border: 1px solid black;
+  padding: 1rem;
+  gap: 0.5rem;
 }
 
 .userWelcome-welcome-text {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .userWelcome-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .userWelcome-info-text {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .userWelcome-login-btn {
-    width: 55%;
-    background-color: var(--mainColor);
-    color: var(--textColor);
-    cursor: pointer;
+  width: 55%;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-    .userWelcome-container {
-        width: 80vw;
-    }
+  .userWelcome-container {
+    width: 80vw;
+  }
 
-    .userWelcome-welcome-text {
-        font-size: 25px;
-    }
+  .userWelcome-welcome-text {
+    font-size: 25px;
+  }
 }

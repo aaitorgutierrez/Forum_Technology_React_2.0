@@ -1,45 +1,90 @@
 .registerNote-container {
-    width: 55vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #e3e4e5;
-    border: 1px solid black;
-    padding: 1rem;
-    gap: 0.5rem;
+  width: 55vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e3e4e5;
+  border: 1px solid black;
+  padding: 1rem;
+  gap: 0.5rem;
 }
 
-.registerNote-welcome-text {
-    font-size: 25px;
+.LogoURL {
+  width: 14vw;
+  height: 14vh;
+}
+
+.userWelcome-info-text {
+  font-size: 16px;
+  padding: 0 100px;
+  margin-top: 30px;
 }
 
 .registerNote-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .registerNote-please-text {
-    font-size: 20px;
+  font-size: 20px;
+  margin-top: 50px;
 }
 
 .registerNote-login-btn {
-    width: 55%;
-    background-color: var(--mainColor);
-    color: var(--textColor);
-    cursor: pointer;
+  min-width: 293px;
+  height: 32px;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.registerNote-login-btn:hover {
+  color: var(--secondaryColor);
 }
 
 @media only screen and (max-width: 600px) {
-    .registerNote-container {
-        width: 80vw;
-    }
+  .registerNote-container {
+    width: 80vw;
+  }
 
-    .registerNote-welcome-text {
-        font-size: 25px;
-    }
+  .registerNote-login-btn {
+    height: 32px;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: medium;
+  }
+
+  .registerNote-login-btn:hover {
+    color: var(--secondaryColor);
+  }
+
+  .userWelcome-info-text {
+    font-size: 12px;
+    padding: 0 7px;
+    margin-top: 5px;
+  }
+
+  .registerNote-welcome-text {
+    font-size: 23px;
+  }
+
+  .registerNote-please-text {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .registerNote-container {
+    width: 80vw;
+  }
 }

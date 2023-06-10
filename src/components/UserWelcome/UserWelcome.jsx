@@ -8,7 +8,7 @@ const UserWelcome = () => {
 
   return (
     <div className="userWelcome-container">
-      <TbPlant2 className="LogoDashboard" size={150} />
+      <TbPlant2 className="LogoDashboard" size={160} />
       <p className="userWelcome-welcome-text">
         Hi {user.user}! Thanks for stopping by.
       </p>
@@ -17,7 +17,9 @@ const UserWelcome = () => {
       </div>
       <p className="userWelcome-info-text">
         Our site is full of great resources and information, so feel free to
-        explore.
+        explore. Explore our site, full of valuable resources and information.
+        Discover a world of knowledge and inspiration at your fingertips. Feel
+        free to dive in and satisfy your curiosity.
       </p>
     </div>
   );
