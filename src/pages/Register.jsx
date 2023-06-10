@@ -43,9 +43,13 @@ const Register = () => {
     <>
       <div className="form-wrap">
         <h1>Sign Up</h1>
-        <p>It’s free and only takes a minute.</p>
+        <p>It’s free and only takes a minute 😊</p>
+
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              username
+            </label>
             <input
               className="input_user"
               type="text"
@@ -54,11 +58,11 @@ const Register = () => {
               autoComplete="false"
               {...register("name", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              username
-            </label>
           </div>
           <div className="password_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              password
+            </label>
             <input
               className="input_user"
               type="password"
@@ -67,12 +71,12 @@ const Register = () => {
               autoComplete="false"
               {...register("password", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              password
-            </label>
           </div>
 
           <div className="email_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              email
+            </label>
             <input
               className="input_user"
               type="email"
@@ -81,9 +85,6 @@ const Register = () => {
               autoComplete="false"
               {...register("email", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              email
-            </label>
 
             <div className="sexo">
               <input
@@ -117,7 +118,7 @@ const Register = () => {
               disabled={send}
               style={{ background: send ? "#49c1a388" : "#2f7a67" }}
             >
-              Register
+              REGISTER
             </button>
           </div>
           <p className="bottom-text">

@@ -31,6 +31,10 @@ body {
   margin-left: 5px;
 }
 
+.titleWeb:hover {
+  color: white;
+}
+
 .buttonNav.active {
   border: 2px solid var(--secondaryColor);
 }

@@ -39,7 +39,9 @@ const Header = () => {
       <header>
         <div className="titleFatherContainer">
           <TbPlant2 size={30} />
-          <h3 className="titleWeb">Digital Nexus</h3>
+          <NavLink to="/dashboard">
+            <h3 className="titleWeb">Digital Nexus</h3>
+          </NavLink>
         </div>
         <nav className="navHeader" ref={navRef}>
           <div className="navButton">
@@ -48,7 +50,6 @@ const Header = () => {
                 <NavLink to="/dashboard">
                   <button className="buttonNav">Home</button>
                 </NavLink>
-
                 <NavLink to="/mobileDevs">
                   <button className="buttonNav">Brands</button>
                 </NavLink>
