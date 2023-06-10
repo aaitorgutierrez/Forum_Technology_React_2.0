@@ -44,22 +44,22 @@ const Header = () => {
         <nav className="navHeader" ref={navRef}>
           <div className="navButton">
             {user && user?.check === true && (
-              <NavLink to="/dashboard">
-                <button className="buttonNav">Home</button>
-              </NavLink>
+              <>
+                <NavLink to="/dashboard">
+                  <button className="buttonNav">Home</button>
+                </NavLink>
+
+                <NavLink to="/mobileDevs">
+                  <button className="buttonNav">Brands</button>
+                </NavLink>
+                <NavLink to="/apps">
+                  <button className="buttonNav">Apps</button>
+                </NavLink>
+                <NavLink to="/favorites">
+                  <button className="buttonNav">favorites</button>
+                </NavLink>
+              </>
             )}
-
-            <NavLink to="/mobileDevs">
-              <button className="buttonNav">Brands</button>
-            </NavLink>
-
-            <NavLink to="/apps">
-              <button className="buttonNav">Apps</button>
-            </NavLink>
-            <NavLink to="/favorites">
-              <button className="buttonNav">favorites</button>
-            </NavLink>
-
             {user && (
               <div className="dropdown">
                 <button
