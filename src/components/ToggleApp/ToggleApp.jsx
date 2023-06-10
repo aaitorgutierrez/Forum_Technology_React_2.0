@@ -14,13 +14,11 @@ const ToggleButtonApp = ({ appId }) => {
     const initializeFavoriteState = async () => {
       try {
         const isFav = await getFavoriteStatus(appId);
-        console.log(isFav);
         setIsFavorite(isFav);
       } catch (error) {
         console.error("Error while checking favorite status", error);
       }
     };
-
     initializeFavoriteState();
   }, [appId]);
 
