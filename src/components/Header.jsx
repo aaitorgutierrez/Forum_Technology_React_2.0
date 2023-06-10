@@ -22,8 +22,6 @@ const Header = () => {
     setAncho(window.innerWidth);
   };
 
-  handleResize();
-
   useEffect(() => {
     window.addEventListener("resize", handleResize);
 
