@@ -18,7 +18,7 @@ const RegisterNote = () => {
                 Please, register to access the page!
             </p>
             <button className="registerNote-login-btn" onClick={() => navigate("/login")}>
-                LOGIN
+                Go to LOGIN
             </button>
         </div>
     )

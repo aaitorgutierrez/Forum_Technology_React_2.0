@@ -1,5 +1,6 @@
 .registerNote-container {
-    width: 50vw;
+    width: 40vw;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +28,7 @@
 }
 
 .registerNote-login-btn {
-    width: 60%;
+    width: 55%;
     background-color: var(--mainColor);
     color: var(--textColor);
     cursor: pointer;
