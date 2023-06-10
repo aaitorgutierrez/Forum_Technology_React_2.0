@@ -1,9 +1,9 @@
 .mobileDevsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: var(page-background-color);
-    padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  background-color: var(page-background-color);
+  padding-top: 1.5rem;
 }
