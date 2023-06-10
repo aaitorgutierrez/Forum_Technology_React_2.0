@@ -12,20 +12,14 @@ const Profile = () => {
   return (
     <>
       <div className="containerNavProfile">
-        <button className="iconNav" onClick={() => setChangeRender(false)}>
-          Change password
+        <button className="btn-profile" onClick={() => setChangeRender(false)}>
+          Password
         </button>
-        <button
-          className="iconNav iconChangeProfile"
-          onClick={() => setChangeRender(true)}
-        >
-          change data profile
+        <button className="btn-profile" onClick={() => setChangeRender(true)}>
+          Profile
         </button>
-        <button
-          className="iconNav iconDeleteUser"
-          onClick={() => useDeleteUser(setUser)}
-        >
-          User delete
+        <button className="btn-profile" onClick={() => useDeleteUser(setUser)}>
+          Delete user
         </button>
       </div>
       <div className="fluidContainerProfile">

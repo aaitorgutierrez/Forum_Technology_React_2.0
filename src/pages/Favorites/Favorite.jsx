@@ -8,18 +8,24 @@ const Favorite = () => {
   const [showMobileDevFavorite, setMobileDevFavorite] = useState(true);
   return (
     <>
-      <button
-        className={`btn-favorite ${showMobileDevFavorite ? "selected" : ""}`}
-        onClick={() => setMobileDevFavorite(true)}
-      >
-        Marcas
-      </button>
-      <button
-        className={`btn-favorite ${!showMobileDevFavorite ? "selected" : ""}`}
-        onClick={() => setMobileDevFavorite(false)}
-      >
-        Apss
-      </button>
+      <div className="btn-favorite-container">
+        <button
+          className={`btn-favoriteMarca ${
+            showMobileDevFavorite ? "selected" : ""
+          }`}
+          onClick={() => setMobileDevFavorite(true)}
+        >
+          Marcas
+        </button>
+        <button
+          className={`btn-favoriteApp ${
+            !showMobileDevFavorite ? "selected" : ""
+          }`}
+          onClick={() => setMobileDevFavorite(false)}
+        >
+          Apps
+        </button>
+      </div>
       <div>
         {showMobileDevFavorite ? (
           <UserFavoritesMobileDevsList />
