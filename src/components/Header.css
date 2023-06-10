@@ -16,10 +16,12 @@ header {
 .ProfileNav {
   font-size: 150;
 }
+
 .buttonNavDown {
   background-color: transparent;
   border: transparent;
 }
+
 .titleWeb {
   margin-left: 5px;
 }
@@ -121,11 +123,13 @@ nav {
   opacity: 1;
   visibility: visible;
 }
+
 @media only screen and (max-width: 870px) {
   .navButton {
-    margin-left: 50px;
+    margin-left: 70px;
   }
 }
+
 @media only screen and (max-width: 600px) {
   header .nav-btn {
     visibility: visible;

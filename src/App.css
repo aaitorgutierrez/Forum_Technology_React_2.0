@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
 }
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -16,6 +17,7 @@ body {
   --mainColorLight: #5767aa;
   --secondaryColor: green;
   --textColor: #eee;
+  --page-background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;

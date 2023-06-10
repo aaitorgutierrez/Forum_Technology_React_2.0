@@ -9,12 +9,12 @@ export const CardMobileDev = ({ mobileDev }) => {
   console.log('mobileDev: ', mobileDev)
   return (
     <div className="mobileDev-Info">
+      {/* <p>{mobileDev.brand}</p> */}
       <img src={mobileDev.image} alt={`mobileDev's ${mobileDev.brand} pic`} />
-      <p>Brand: {mobileDev.brand}</p>
       <p>OS: {mobileDev.OS}</p>
       <p>versionOS: {mobileDev.versionOS}</p>
       <p>language: {mobileDev.language}</p>
-      <p>description: {mobileDev.description}</p>
+      <p>{mobileDev.description}</p>
       <div className="button-Holder">
         <ToggleButton className="ToggleMobileDev" mobileDevId={mobileDev._id} />
         <button

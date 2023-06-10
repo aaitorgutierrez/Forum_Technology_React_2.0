@@ -4,6 +4,6 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: #d1f5d3;
+    background-color: var(page-background-color);
     padding-top: 1.5rem;
 }
