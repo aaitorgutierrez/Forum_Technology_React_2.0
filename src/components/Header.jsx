@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { TbPlant2 } from "react-icons/tb";
 import "./Header.css";
@@ -11,12 +11,30 @@ const Header = () => {
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
-
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
-
   const handleProfileDropdown = () => {
     setProfileDropdownOpen(!profileDropdownOpen);
   };
+
+  const [ancho, setAncho] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setAncho(window.innerWidth);
+  };
+
+  handleResize();
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log(ancho);
+  }, [ancho]);
 
   return (
     <>
@@ -25,34 +43,24 @@ const Header = () => {
           <TbPlant2 size={30} />
           <h3 className="titleWeb">Digital Nexus</h3>
         </div>
-
         <nav className="navHeader" ref={navRef}>
           <div className="navButton">
             {user && user?.check === true && (
-              <>
-                <NavLink to="/dashboard">
-                  <button className="buttonNav">Home</button>
-                </NavLink>
-                <NavLink to="/mobileDevs">
-                  <button className="buttonNav">Brands</button>
-                </NavLink>
-                <NavLink to="/apps">
-                  <button className="buttonNav">Apps</button>
-                </NavLink>
-                <NavLink to="/favorites">
-                  <button className="buttonNav">Favorites</button>
-                </NavLink>
-              </>
-
+              <NavLink to="/dashboard">
+                <button className="buttonNav">Home</button>
+              </NavLink>
             )}
 
-            {/* <NavLink to="/mobileDevsFavorites">
-              <button className="buttonNav">MobileDevs Favorites</button>
-            </NavLink> */}
-            {/* <NavLink to="/appsFavorites">
-              <button className="buttonNav">Apps Favorites</button>
-            </NavLink> */}
+            <NavLink to="/mobileDevs">
+              <button className="buttonNav">MobileDevs</button>
+            </NavLink>
 
+            <NavLink to="/apps">
+              <button className="buttonNav">Apps</button>
+            </NavLink>
+            <NavLink to="/favorites">
+              <button className="buttonNav">favorites</button>
+            </NavLink>
 
             {user && (
               <div className="dropdown">
@@ -84,9 +92,13 @@ const Header = () => {
             </button>
           </div>
         </nav>
-        <button className="nav-btn" onClick={showNavbar}>
-          <FaBars />
-        </button>
+        {ancho < 600 && (
+          <>
+            <button className="nav-btn" onClick={showNavbar}>
+              <FaBars />
+            </button>
+          </>
+        )}
       </header>
     </>
   );
