@@ -9,13 +9,13 @@ const Favorite = () => {
   return (
     <>
       <button
-        className="btn-favorite"
+        className={`btn-favorite ${showMobileDevFavorite ? "selected" : ""}`}
         onClick={() => setMobileDevFavorite(true)}
       >
         Marcas
       </button>
       <button
-        className="btn-favorite"
+        className={`btn-favorite ${!showMobileDevFavorite ? "selected" : ""}`}
         onClick={() => setMobileDevFavorite(false)}
       >
         Apss

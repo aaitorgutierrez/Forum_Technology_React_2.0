@@ -15,18 +15,18 @@ const UserFavoritesMobileDevsList = () => {
 
   return (
     <>
-      {showWelcome(userDataFromDB)}
+      {/* {showWelcome(userDataFromDB)} */}
       {showMobileDevs(userDataFromDB.mobileDevs)}
     </>
   );
 };
 
-const showWelcome = (userDataFromDB) => {
-  console.log("userDataFromDB: ", userDataFromDB);
-  const welcome = `Hi, ${userDataFromDB.name}!`;
+// const showWelcome = (userDataFromDB) => {
+//   console.log("userDataFromDB: ", userDataFromDB);
+//   const welcome = `Hi, ${userDataFromDB.name}!`;
 
-  return <h1>{welcome}</h1>;
-};
+//   return <h1>{welcome}</h1>;
+// };
 
 const showMobileDevs = (mobileDevs) => (
   <div className="userFavoritesMobileDevs-Container">
