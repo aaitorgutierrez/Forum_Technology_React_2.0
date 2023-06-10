@@ -3,6 +3,6 @@
 }
 
 .homeContainer {
-  max-width: 350px;
+  /* max-width: 350px; */
   color: var(--mainColor);
 }
