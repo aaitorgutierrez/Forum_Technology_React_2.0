@@ -50,7 +50,7 @@ const Header = () => {
             )}
 
             <NavLink to="/mobileDevs">
-              <button className="buttonNav">MobileDevs</button>
+              <button className="buttonNav">Brands</button>
             </NavLink>
 
             <NavLink to="/apps">
