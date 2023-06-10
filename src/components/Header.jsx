@@ -1,14 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
 import { TbPlant2 } from "react-icons/tb";
 import "./Header.css";
 import { useAuth } from "../contexts/authContext";
 
 const Header = () => {
   const { user, logout } = useAuth();
-
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -44,10 +42,9 @@ const Header = () => {
               <button className="buttonNav">Apps</button>
             </NavLink>
 
-            <NavLink to="/mobileDevsFavorites">
+            {/* <NavLink to="/mobileDevsFavorites">
               <button className="buttonNav">MobileDevs Favorites</button>
-            </NavLink>
-
+            </NavLink> */}
             {/* <NavLink to="/appsFavorites">
               <button className="buttonNav">Apps Favorites</button>
             </NavLink> */}

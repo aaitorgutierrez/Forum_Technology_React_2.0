@@ -6,7 +6,8 @@ import {
   getFavoriteStatus,
 } from "../../services/API_proyect/app.service";
 
-const ToggleButton = ({ appId }) => {
+const ToggleButtonApp = ({ appId }) => {
+  console.log(appId);
   const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
@@ -51,4 +52,4 @@ const ToggleButton = ({ appId }) => {
   );
 };
 
-export default ToggleButton;
+export default ToggleButtonApp;

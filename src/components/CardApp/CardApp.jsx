@@ -1,4 +1,5 @@
 import ToggleButton from "../Toggle/Toggle";
+import ToggleButtonApp from "../ToggleApp/ToggleApp";
 import "./CardApp.css";
 import { useNavigate } from "react-router-dom";
 
@@ -15,7 +16,7 @@ export const CardApp = ({ app }) => {
       <p>appSize: {app.appSize}</p>
       <p>description: {app.description}</p>
       <div className="button-Holder">
-        <ToggleButton appId={app._id} />
+        <ToggleButtonApp appId={app._id} />
         <button
           onClick={() =>
             navigate(pathById, {

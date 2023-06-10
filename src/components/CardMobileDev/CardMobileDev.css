@@ -3,8 +3,6 @@
 }
 
 .mobileDev-Info {
-  width: 600px;
-  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
