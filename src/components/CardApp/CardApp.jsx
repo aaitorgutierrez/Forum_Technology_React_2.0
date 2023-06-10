@@ -10,14 +10,15 @@ export const CardApp = ({ app }) => {
   return (
     <div className="app-Info">
       <img src={app.image} alt={`app's ${app.appName} pic`} />
-      <p>appName: {app.appName}</p>
-      <p>category: {app.category}</p>
-      <p>codeLanguages: {app.codeLanguages}</p>
-      <p>appSize: {app.appSize}</p>
-      <p>description: {app.description}</p>
+      {/* <p> {app.appName}</p> */}
+      <p> {app.category}</p>
+      <p> {app.codeLanguages}</p>
+      <p> {app.appSize} Mb</p>
+      <h5> {app.description}</h5>
       <div className="button-Holder">
         <ToggleButtonApp appId={app._id} />
         <button
+          className="button-App"
           onClick={() =>
             navigate(pathById, {
               state: { appId: app._id, color: "blue" },

@@ -25,7 +25,7 @@ export const CardMobileDev = ({ mobileDev }) => {
             })
           }
         >
-          Show Apps!
+          Show Apps
         </button>
       </div>
     </div>

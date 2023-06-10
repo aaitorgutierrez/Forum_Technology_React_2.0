@@ -5,7 +5,8 @@ const Footer = () => {
     <>
       <div className="whiteContainer"></div>
       <footer>
-        <h4 className="footerText">With 💖 from Neoland ✌ </h4>
+        <h4 className="footerText">Mobile Proyect With 💖</h4>
+        <h4 className="footerText">Champion Group ✌</h4>
       </footer>
     </>
   );

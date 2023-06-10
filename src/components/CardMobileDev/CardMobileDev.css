@@ -42,10 +42,15 @@
 }
 
 .button-MobileDev {
-  background-color: black;
   width: 120px;
-  height: 30px;
-  color: white;
+  height: 32px;
   border-radius: 5px;
   cursor: pointer;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  font-size: medium;
+}
+
+.button-MobileDev:hover {
+  color: var(--secondaryColor);
 }

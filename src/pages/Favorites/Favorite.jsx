@@ -15,7 +15,7 @@ const Favorite = () => {
           }`}
           onClick={() => setMobileDevFavorite(true)}
         >
-          Marcas
+          Brands
         </button>
         <button
           className={`btn-favoriteApp ${

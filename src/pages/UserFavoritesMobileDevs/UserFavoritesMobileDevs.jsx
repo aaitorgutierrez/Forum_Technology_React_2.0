@@ -1,9 +1,9 @@
-import UserFavoritesMobileDevsList from '../../components/UserFavoritesMobileDevsList/UserFavoritesMobileDevsList'
+import UserFavoritesMobileDevsList from "../../components/UserFavoritesMobileDevsList/UserFavoritesMobileDevsList";
 
-const UserFavoritesMobileDevs = () =>
-    <div className="outletContainer">
-        <UserFavoritesMobileDevsList />
-    </div>
+const UserFavoritesMobileDevs = () => (
+  <div className="outletContainer">
+    <UserFavoritesMobileDevsList />
+  </div>
+);
 
-
-export default UserFavoritesMobileDevs
+export default UserFavoritesMobileDevs;
