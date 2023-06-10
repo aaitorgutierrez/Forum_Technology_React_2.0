@@ -91,8 +91,9 @@ const FormProfile = () => {
                 className="btn"
                 type="submit"
                 disabled={send}
-                // style={{ background: send ? "#49c1a388" : "#49c1a2" }}
-                style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+                //style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+                //style={{ background: send ? "#008000" : "#37A08E" }}
+                style={{ background: send ? "#008000" : "#2f7a67" }}
               >
                 CHANGE PROFILE
               </button>

@@ -19,7 +19,7 @@ const Profile = () => {
           Profile
         </button>
         <button className="btn-profile" onClick={() => useDeleteUser(setUser)}>
-          Delete user
+          Delete
         </button>
       </div>
       <div className="fluidContainerProfile">

@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import useChangePasswordError from "../hooks/useChangePasswordError";
 import { useAuth } from "../contexts/authContext";
 import { Navigate } from "react-router-dom";
+import './ChangePassword.css'
 
 const ChangePassword = () => {
   const { setUser } = useAuth();
@@ -57,10 +58,12 @@ const ChangePassword = () => {
   return (
     <>
       <div className="form-wrap">
-        <h1>Change your password ♻</h1>
-        <p>Please, enter your old and new passwords</p>
+        <p className="changePassword-text-new-password">Your new password</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="password_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              current password
+            </label>
             <input
               className="input_user"
               type="password"
@@ -69,11 +72,11 @@ const ChangePassword = () => {
               autoComplete="false"
               {...register("password", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              password
-            </label>
           </div>
           <div className="newPassword_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              new password
+            </label>
             <input
               className="input_user"
               type="password"
@@ -82,11 +85,11 @@ const ChangePassword = () => {
               autoComplete="false"
               {...register("newPassword", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              password
-            </label>
           </div>
           <div className="confirmPassword_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              confirm new password
+            </label>
             <input
               className="input_user"
               type="password"
@@ -95,16 +98,14 @@ const ChangePassword = () => {
               autoComplete="false"
               {...register("confirmPassword", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              confirm password
-            </label>
           </div>
           <div className="btn_container">
             <button
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              //style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#008000" : "#2f7a67" }}
             >
               CHANGE PASSWORD
             </button>

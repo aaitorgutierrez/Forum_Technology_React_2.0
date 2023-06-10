@@ -1,10 +1,10 @@
 import "./FigureUser.css";
+
 const FigureUser = (user) => {
-  console.log(user);
   return (
     <figure className="dataProfile">
       <img src={user.user.image} alt="user image" className="imageUser" />
-      <h4 className="emailUser">Email: {user.user.email}</h4>
+      <h4 className="emailUser">{user.user.email}</h4>
     </figure>
   );
 };

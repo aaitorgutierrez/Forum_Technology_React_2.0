@@ -19,12 +19,13 @@
   align-items: center;
   background-color: var(--mainColor);
   max-width: 1000px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 20px;
 }
 
 .formProfile {
-  margin: 2rem;
+  /* margin: 2rem; */
+  margin: 0;
 }
 
 @media (max-width: 900px) {
