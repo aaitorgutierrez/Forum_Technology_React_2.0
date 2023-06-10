@@ -5,7 +5,6 @@ import {
   app_ToggleApp,
   getFavoriteStatus,
 } from "../../services/API_proyect/app.service";
-import { updateToken } from "../../util/updateToken";
 
 const ToggleButton = ({ appId }) => {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -14,6 +13,7 @@ const ToggleButton = ({ appId }) => {
     const initializeFavoriteState = async () => {
       try {
         const isFav = await getFavoriteStatus(appId);
+        console.log(isFav);
         setIsFavorite(isFav);
       } catch (error) {
         console.error("Error while checking favorite status", error);

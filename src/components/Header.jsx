@@ -48,8 +48,11 @@ const Header = () => {
               <button className="buttonNav">MobileDevs Favorites</button>
             </NavLink>
 
-            <NavLink to="/appsFavorites">
+            {/* <NavLink to="/appsFavorites">
               <button className="buttonNav">Apps Favorites</button>
+            </NavLink> */}
+            <NavLink to="/favorites">
+              <button className="buttonNav">favorites</button>
             </NavLink>
 
             {user && (

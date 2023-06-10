@@ -22,6 +22,7 @@ import Apps from "./pages/Apps/Apps.jsx";
 import MobileDevs_inApp from "./pages/MobileDevs_inApp/MobileDevs_inApp.jsx";
 import UserFavoritesMobileDevsList from "./components/UserFavoritesMobileDevsList/UserFavoritesMobileDevsList.jsx";
 import UserFavoritesAppsList from "./components/UserFavoritesAppsList/UserFavoritesAppsList.jsx";
+import Favorite from "./pages/Favorites/Favorite.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/login" element={<Login />} />
             <Route path="/mobileDevs" element={<MobileDevs />} />
             <Route path="/apps" element={<Apps />} />
+            <Route path="/favorites" element={<Favorite />} />
             <Route
               path="/mobileDevsFavorites"
               element={<UserFavoritesMobileDevsList />}
