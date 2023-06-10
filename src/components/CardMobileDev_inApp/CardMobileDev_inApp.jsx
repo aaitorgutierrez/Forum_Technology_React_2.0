@@ -2,6 +2,7 @@ import "./CardMobileDev_inApp.css";
 
 export const CardMobileDev = ({ mobileDev }) => (
   <div className="cardMobileDevInApp-Data">
+    <h3>{mobileDev.brand}</h3>
     <img
       className="cardMobileDevInApp-img"
       src={mobileDev.image}
@@ -15,11 +16,11 @@ const showMobileDevInfo = (mobileDev) => {
   return (
     <div className="cardMobileDevInApp-Info">
       {/* <p>app id: {app._id}</p> */}
-      <p>mobileDev name: {mobileDev.brand}</p>
-      <p>mobileDev OS: {mobileDev.OS}</p>
-      <p>mobileDev versionOS: {mobileDev.versionOS}</p>
-      <p>mobileDev language: {mobileDev.language}</p>
-      <p>mobileDev description: {mobileDev.description}</p>
+      {/* <p>{mobileDev.brand}</p> */}
+      <p>{mobileDev.OS}</p>
+      <p>{mobileDev.versionOS}</p>
+      <p>{mobileDev.language}</p>
+      <h5>{mobileDev.description}</h5>
     </div>
   );
 };
