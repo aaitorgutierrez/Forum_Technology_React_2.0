@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 export const CardMobileDev = ({ mobileDev }) => {
   const navigate = useNavigate();
   const pathById = `/mobileDev/apps`;
-
   console.log("mobileDev: ", mobileDev);
   return (
     <div className="mobileDev-Info">

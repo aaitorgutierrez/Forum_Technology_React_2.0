@@ -1,38 +1,33 @@
 import { useState, useEffect } from "react";
 //import { mobileDev_getAll } from "../../service/mobileDev.service";
-import { mobileDev_getAll } from '../../services/API_proyect/mobileDev.service'
+import { mobileDev_getAll } from "../../services/API_proyect/mobileDev.service";
 import CardMobileDev from "../CardMobileDev/CardMobileDev";
-import './MobileDevList.css'
+import "./MobileDevList.css";
 
 const MobileDevList = () => {
-    const [mobileDevList, setMobileDevList] = useState([])
+  const [mobileDevList, setMobileDevList] = useState([]);
 
-    useEffect(() => {
-        mobileDev_getAll()
-            .then(mobileDev => setMobileDevList(mobileDev))
-            .catch((error) => {
-                console.log('Error fetching data from back end ', error)
+  useEffect(() => {
+    mobileDev_getAll()
+      .then((mobileDev) => setMobileDevList(mobileDev))
+      .catch((error) => {
+        console.log("Error fetching data from back end ", error);
 
-                return error;
-            });
-    }, []);
+        return error;
+      });
+  }, []);
 
-    return (
-        <>
-            {showMobileDevs(mobileDevList)}
-        </>
-    )
-}
+  return <>{showMobileDevs(mobileDevList)}</>;
+};
 
-const showMobileDevs = (mobileDevList) =>
-    <div className='mobileDevsContainer'>
-        {mobileDevList.map(showMobileDev)}
-    </div>
+const showMobileDevs = (mobileDevList) => (
+  <div className="mobileDevsContainer">{mobileDevList.map(showMobileDev)}</div>
+);
 
+const showMobileDev = (mobileDev) => (
+  <div key={mobileDev._id}>
+    <CardMobileDev mobileDev={mobileDev} />
+  </div>
+);
 
-const showMobileDev = (mobileDev) =>
-    <div key={mobileDev._id}>
-        <CardMobileDev mobileDev={mobileDev} />
-    </div>
-
-export default MobileDevList
+export default MobileDevList;

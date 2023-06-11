@@ -44,3 +44,11 @@ main {
   font-family: inherit;
   font-size: inherit;
 }
+
+.outletContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 0;
+}
