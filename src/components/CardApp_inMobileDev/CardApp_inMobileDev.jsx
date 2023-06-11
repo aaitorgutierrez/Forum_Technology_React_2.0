@@ -12,7 +12,7 @@ export const CardApp_inMobileDev = ({ app }) => (
 );
 
 const showAppInfo = (app) => {
-  console.log("showAppInfo -> app: ", app);
+  // console.log("showAppInfo -> app: ", app);
   return (
     <div className="cardAppInMobileDev-Info">
       {/* <p>app id: {app._id}</p> */}

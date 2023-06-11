@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const CardMobileDev = ({ mobileDev }) => {
   const navigate = useNavigate();
   const pathById = `/mobileDev/apps`;
-  console.log("mobileDev: ", mobileDev);
+  // console.log("mobileDev: ", mobileDev);
   return (
     <div className="mobileDev-Info">
       {/* <p>{mobileDev.brand}</p> */}
@@ -13,19 +13,16 @@ export const CardMobileDev = ({ mobileDev }) => {
       <div className="mobileDev-Info-tabla">
         <div className="mobileDev-Info-tabla-p">
           <p>
-            {" "}
             OS
             <div className="mobileDev-Info-tabla-OS">{mobileDev.OS}</div>
           </p>
           <p>
-            {" "}
-            &nbsp;VersionOS
+            VersionOS
             <div className="mobileDev-Info-tabla-versionOS">
               {mobileDev.versionOS}
             </div>
           </p>
           <p>
-            {" "}
             Language
             <div className="mobileDev-Info-tabla-language">
               {mobileDev.language}

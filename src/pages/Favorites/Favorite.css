@@ -3,29 +3,42 @@
   color: green;
 }
 .btn-favorite-container {
-  gap: 16px;
+  display: flex;
+  gap: 21px;
   margin-bottom: 30px;
   width: 532px;
+  margin-top: 30px;
 }
 .btn-favoriteMarca {
   width: 250px;
-  height: 35px;
+  height: 70px;
   gap: 50px;
   background-color: var(--mainColor);
   color: var(--textColor);
   border-radius: 5px;
   margin-right: 7px;
   cursor: pointer;
+  font-size: 21px;
 }
 .btn-favoriteApp {
   width: 250px;
-  height: 35px;
+  height: 70px;
   gap: 50px;
   background-color: var(--mainColor);
   color: var(--textColor);
   border-radius: 5px;
   cursor: pointer;
+  font-size: 21px;
 }
+
+.btn-favoriteApp:hover {
+  color: #37a08e;
+}
+
+.btn-favoriteMarca:hover {
+  color: #37a08e;
+}
+
 @media only screen and (max-width: 870px) {
   .btn-favorite-container {
     display: flex;
@@ -33,7 +46,6 @@
     gap: 16px;
     margin-bottom: 30px;
     width: 375px;
-    border: solid red 1px;
   }
   .btn-favoriteApp {
     width: 150px;

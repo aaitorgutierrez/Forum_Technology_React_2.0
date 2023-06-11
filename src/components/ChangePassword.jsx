@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import useChangePasswordError from "../hooks/useChangePasswordError";
 import { useAuth } from "../contexts/authContext";
 import { Navigate } from "react-router-dom";
-import './ChangePassword.css'
+import "./ChangePassword.css";
 
 const ChangePassword = () => {
   const { setUser } = useAuth();
@@ -54,11 +54,10 @@ const ChangePassword = () => {
       cancelButtonColor: "black",
       confirmButtonText: "YES",
       position: "center",
-    })
-  }
+    });
+  };
 
-
-  formSubmitTest()
+  formSubmitTest();
 
   const formSubmit = (formData) => {
     Swal.fire({
@@ -69,13 +68,12 @@ const ChangePassword = () => {
       // cancelButtonColor: "#d33",
       // confirmButtonText: "YES",
       // position: 'center',
-    })
-  }
-
+    });
+  };
 
   //! --------------- USEEFFECT  que controla la gestion de errores ----------------------
   useEffect(() => {
-    console.log(res);
+    // console.log(res);
     useChangePasswordError(res, setChangePasswordOk);
   }, [res]);
 

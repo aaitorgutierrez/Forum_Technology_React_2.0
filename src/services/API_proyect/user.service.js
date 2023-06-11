@@ -111,19 +111,16 @@ export const getUserById = async (id) => {
 
 // ----------------- Get User by Token from DB -----------
 export const getUserByToken = async () => {
-  console.log('getUserByToken')
-
   return API.get(`/users/getUserByToken/getUserByToken/`, {
     headers: {
       Authorization: `Bearer ${updateToken()}`,
     },
   })
     .then((res) => {
-      console.log("Front -> getUserByToken -> res: ", res)
-      return res.data
+      // console.log("Front -> getUserByToken -> res: ", res);
+      return res.data;
     })
     .catch((error) => {
       return error;
     });
 };
-

@@ -7,7 +7,7 @@ import {
 } from "../../services/API_proyect/app.service";
 
 const ToggleButtonApp = ({ appId }) => {
-  console.log(appId);
+  // console.log(appId);
   const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {

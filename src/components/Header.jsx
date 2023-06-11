@@ -30,9 +30,7 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(ancho);
-  }, [ancho]);
+  useEffect(() => {}, [ancho]);
 
   return (
     <>

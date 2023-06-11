@@ -107,6 +107,9 @@ const CheckCode = () => {
         <p>Write the code sent to your email</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              Registration code
+            </label>
             <input
               className="input_user"
               type="text"
@@ -115,9 +118,6 @@ const CheckCode = () => {
               autoComplete="false"
               {...register("confirmationCode", { required: false })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              Registration code
-            </label>
           </div>
 
           <div className="btn_container">
@@ -126,7 +126,7 @@ const CheckCode = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#2f7a67" : "#2f7a67" }}
             >
               Verify Code
             </button>
@@ -136,7 +136,7 @@ const CheckCode = () => {
               id="btnResend"
               className="btn"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#2f7a67" : "#2f7a67" }}
               onClick={() => handleReSend()}
             >
               Resend Code
