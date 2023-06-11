@@ -16,7 +16,6 @@ const ShowTitleMsgBigScreen = () => (
     Enjoy all our awesome <u>Brands</u> and don't forget to follow them!
   </h1>
 );
-
 const ShowTitleMsgSmallScreen = () => (
   <h1>
     Follow our <u>Brands</u>

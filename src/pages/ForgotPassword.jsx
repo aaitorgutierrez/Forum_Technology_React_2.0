@@ -32,10 +32,13 @@ const ForgotPassword = () => {
   return (
     <>
       <div className="form-wrap">
-        <h1>Change your password 💱</h1>
+        <h1>Change your password 🔓</h1>
 
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              Email
+            </label>
             <input
               className="input_user"
               type="text"
@@ -44,9 +47,6 @@ const ForgotPassword = () => {
               autoComplete="false"
               {...register("email", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              Email
-            </label>
           </div>
 
           <div className="btn_container">
@@ -54,9 +54,9 @@ const ForgotPassword = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#49c1a388" : "#2f7a67" }}
             >
-              Change password
+              CHANGE PASSWORD
             </button>
           </div>
 
