@@ -1,6 +1,6 @@
 .registerNote-container {
   width: 55vw;
-  height: 60vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +9,7 @@
   background-color: #e3e4e5;
   border: 1px solid black;
   padding: 1rem;
+  margin: 1rem;
   gap: 0.5rem;
 }
 
@@ -18,7 +19,7 @@
 }
 
 .registerNote-info-text {
-  font-size: 16px;
+  font-size: 25px;
   padding: 0 100px;
   margin-top: 30px;
 }
@@ -35,14 +36,29 @@
   margin-top: 50px;
 }
 
-.registerNote-login-btn {
-  min-width: 293px;
+.registerNote-Digital-Nexus-text {
+  font-size: 25px;
+}
+
+.registerNote-register-login-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.registerNote-btn {
+  width: 200px;
   height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--mainColor);
   color: var(--textColor);
   cursor: pointer;
   border-radius: 5px;
   font-size: medium;
+  padding: 1rem;
 }
 
 .registerNote-login-btn:hover {
@@ -86,5 +102,10 @@
 @media only screen and (max-width: 900px) {
   .registerNote-container {
     width: 80vw;
+  }
+
+  .registerNote-btn {
+    min-width: 75px;
+    font-size: 12px;
   }
 }

@@ -43,8 +43,7 @@ const Register = () => {
     <>
       <div className="form-wrap">
         <h1>Sign Up</h1>
-        <p>It’s free and only takes a minute 😊</p>
-
+        <p>Get started for free in less time than it takes to make a cup of coffee 😊</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
             <label htmlFor="custom-input" className="custom-placeholder">
@@ -95,7 +94,7 @@ const Register = () => {
                 {...register("gender")}
               />
               <label htmlFor="hombre" className="label-radio hombre">
-                Hombre
+                Male
               </label>
               <input
                 type="radio"
@@ -105,7 +104,7 @@ const Register = () => {
                 {...register("gender")}
               />
               <label htmlFor="mujer" className="label-radio mujer">
-                Mujer
+                Female
               </label>
             </div>
             <Uploadfile />

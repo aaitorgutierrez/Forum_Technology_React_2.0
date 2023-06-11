@@ -11,9 +11,11 @@ header {
   top: 0;
   z-index: 1000;
 }
+
 body {
   padding-top: 10vh;
 }
+
 .logoPlant {
   width: 300px;
 }
@@ -43,6 +45,7 @@ body {
   background-color: transparent;
   border: transparent;
   letter-spacing: 5px;
+  font-size: 25px;
 }
 
 .buttonNav:hover {
