@@ -27,13 +27,13 @@ const useForgotPasswordError = (res, setForgetOk) => {
   }
   //! ------------------- 404 => User no register -
   if (
-    res?.response?.data?.includes("User no register") &&
+    res?.response?.data?.includes("Fail updating user") &&
     res?.response?.status == 404
   )
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "User no register ❎. Enter a valid email address",
+      text: "User not registered ❎. Enter a valid email address",
       showConfirmButton: false,
       timer: 3000,
     });
@@ -43,14 +43,14 @@ const useForgotPasswordError = (res, setForgetOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Internal server error ❎, please try again ",
+      text: "Internal server error ❎, please try again!",
       showConfirmButton: false,
       timer: 1500,
     });
 
   //! ------------------- 404 => 'dont send email and dont update user'
   if (
-    res?.response?.data?.includes("dont send email and dont update user") &&
+    res?.response?.data?.includes("Fail updating user") &&
     res?.response?.status == 404
   )
     Swal.fire({

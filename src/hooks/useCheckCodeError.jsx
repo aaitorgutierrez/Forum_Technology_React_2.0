@@ -14,7 +14,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
       timer: 1500,
     });
   //! -------200:  ok delete user
-  if (res?.data?.delete?.includes("ok delete user")) {
+  if (res?.data?.delete?.includes("Fail creating user")) {
     setDeleteUser(() => true);
 
     Swal.fire({
@@ -26,16 +26,16 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
     });
   }
 
-  //! -------200: error delete user
-  if (res?.data?.delete?.includes("error delete user")) {
-    Swal.fire({
-      icon: "error",
-      title: "No correct Code ❎.",
-      text: "No delete user. Try again, please.",
-      showConfirmButton: false,
-      timer: 2500,
-    });
-  }
+  // //! -------200: error delete user
+  // if (res?.data?.delete?.includes("error delete user")) {
+  //   Swal.fire({
+  //     icon: "error",
+  //     title: "No correct Code ❎.",
+  //     text: "No delete user. Try again, please.",
+  //     showConfirmButton: false,
+  //     timer: 2500,
+  //   });
+  // }
   //! ------200: testCheckOk:
   if (res?.data?.testCheckOk?.toString() == "true") {
     setOkCheck(() => true);
@@ -51,7 +51,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
   if (res?.data?.testCheckOk?.toString() == "false") {
     Swal.fire({
       icon: "error",
-      title: "Internal server error ❎.",
+      title: "Internal Server Error ❎.",
       text: "No delete user. Try again, please.",
       showConfirmButton: false,
       timer: 2500,
@@ -62,8 +62,8 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
   if (res?.response?.status == 404)
     Swal.fire({
       icon: "error",
-      title: "Internal server error ❎.",
-      text: "No delete user. Try again, please.",
+      title: "Wrong Confirmation Code ❎.",
+      text: "User deleted from the database. Please register again.",
       showConfirmButton: false,
       timer: 1500,
     });

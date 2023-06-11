@@ -25,7 +25,7 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
     });
   }
 
-  //! ---------- 404: {error.message} --> general
+  //! ---------- 404: {error.message} --> general   //REVISAR IMPORTANTE
   if (
     !res?.response?.data?.includes("password dont match") &&
     res?.response?.status == 404
@@ -40,11 +40,11 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
 
   //! ---------- 404: password dont match
 
-  if (res?.response?.data?.includes("password dont match"))
+  if (res?.response?.data?.includes("Fail matching passwords"))
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Uh-oh, the old password doesn’t match. Let’s try again!",
+      text: "Uh-oh, the old password doesn’t match with the new password. Let’s try again!",
       showConfirmButton: false,
       timer: 3000,
     });

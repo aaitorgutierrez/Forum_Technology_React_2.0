@@ -30,14 +30,14 @@ const useLoginError = (res, setLoginOk, userlogin) => {
     Swal.fire({
       icon: "success",
       title: "Hey there, welcome to my tech page!",
-      text: "Login ok ✅",
+      text: "Succesfully logged in ✅",
       showConfirmButton: false,
       timer: 1500,
     });
   }
 
   //! ---------- 404: password dont match
-  if (res?.response?.data?.includes("password dont match"))
+  if (res?.response?.data?.includes("Fail matching passwords"))
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -48,7 +48,7 @@ const useLoginError = (res, setLoginOk, userlogin) => {
 
   //! ---------- 404: User no register
 
-  if (res?.response?.data?.includes("User no register"))
+  if (res?.response?.data?.includes("Fail registering user"))
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -56,6 +56,31 @@ const useLoginError = (res, setLoginOk, userlogin) => {
       showConfirmButton: false,
       timer: 1500,
     });
+
+
+//! ---------- Wrong Password
+
+if (res?.response?.data?.includes("Wrong password, please try again"))
+Swal.fire({
+  icon: "error",
+  title: "Wrong Password",
+  text: "The password you introduced is incorrect. Please, try again",
+  showConfirmButton: false,
+  timer: 1500,
+});
+
+
+//! ---------- Wrong Email
+
+if (res?.response?.data?.includes("Wrong email address, please try again"))
+Swal.fire({
+  icon: "error",
+  title: "Wrong Email",
+  text: "The email you introduced is incorrect. Please, try again",
+  showConfirmButton: false,
+  timer: 1500,
+});
 };
+
 
 export default useLoginError;

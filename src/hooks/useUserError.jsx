@@ -41,20 +41,20 @@ const useUserError = (res, setRegisterOk) => {
 
   if (
     res?.response?.data?.includes(
-      "duplicate key error collection: userProyect.users index: name_1 dup key: { name"
+      "Fail registering user"
     )
   )
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "That name is taken. Let’s try another one!",
+      text: "That email is taken. Let’s try another one!",
       showConfirmButton: false,
       timer: 1500,
     });
 
   //! error ---> validacion de la contraseña
 
-  if (res?.response?.data?.includes("validation failed: password"))
+  if (res?.response?.data?.includes("fail creating user"))
     Swal.fire({
       icon: "error",
       title: "Oops...",

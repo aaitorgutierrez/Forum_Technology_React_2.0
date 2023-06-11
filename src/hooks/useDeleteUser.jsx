@@ -3,7 +3,7 @@ import { deleteUser } from "../services/API_proyect/user.service";
 
 const useDeleteUser = (setUser) => {
   Swal.fire({
-    title: "Sure you want to remove your profile?",
+    title: "Are you sure you want to remove your profile?",
     icon: "warning",
     showCancelButton: true,
     confirmButtonColor: "rgb(73, 193, 162)",
