@@ -22,7 +22,7 @@ const ChangePassword2 = () => {
 
             Swal.fire({
                 title: "You really wanna reset your password?",
-                icon: "warning!",
+                icon: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "rgb(73, 193, 162)",
                 cancelButtonColor: "#d33",
