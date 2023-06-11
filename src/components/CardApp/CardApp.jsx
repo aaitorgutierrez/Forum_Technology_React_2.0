@@ -11,9 +11,26 @@ export const CardApp = ({ app }) => {
     <div className="app-Info">
       <img src={app.image} alt={`app's ${app.appName} pic`} />
       {/* <p> {app.appName}</p> */}
-      <p> {app.category}</p>
-      <p> {app.codeLanguages}</p>
-      <p> {app.appSize} Mb</p>
+      <div className="app-Info-tabla">
+        <div className="app-Info-tabla-p">
+          <p>
+            {" "}
+            Category
+            <div className="app-Info-tabla-Category">{app.category}</div>
+          </p>
+          <p>
+            Languages
+            <div className="mobileDev-Info-tabla-Languages">
+              {app.codeLanguages}
+            </div>
+          </p>
+          <p>
+            Size
+            <div className="app-Info-tabla-appSize">{app.appSize} Mbytes</div>
+          </p>
+        </div>
+      </div>
+
       <h5> {app.description}</h5>
       <div className="button-Holder">
         <ToggleButtonApp appId={app._id} />

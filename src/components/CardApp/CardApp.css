@@ -24,6 +24,33 @@
   color: black;
 }
 
+.app-Info-tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-Info-tabla-p {
+  display: flex;
+  gap: 21px;
+  font-weight: 900;
+}
+
+.app-Info-tabla-Category {
+  margin-left: px;
+  color: var(--secondaryColor);
+}
+
+.mobileDev-Info-tabla-Languages {
+  margin-left: px;
+  color: var(--secondaryColor);
+}
+
+.app-Info-tabla-appSize {
+  margin-left: px;
+  color: var(--secondaryColor);
+}
+
 .app-Info > img {
   width: 160px;
   height: 100px;
