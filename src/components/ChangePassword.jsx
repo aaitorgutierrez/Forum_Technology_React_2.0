@@ -13,33 +13,66 @@ const ChangePassword = () => {
   const [res, setRes] = useState({});
   const [send, setSend] = useState(false);
   const [changePasswordOk, setChangePasswordOk] = useState(false);
+
   //! --------- funcion que controla el formulario-----------------------
-  const formSubmit = async (formData) => {
-    const { password, newPassword, confirmPassword } = formData;
-    if (newPassword == confirmPassword) {
-      Swal.fire({
-        title: "Are you sure you want to change your password?",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "rgb(73, 193, 162)",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "YES",
-      }).then(async (result) => {
-        if (result.isConfirmed) {
-          setSend(true);
-          setRes(await changePasswordUser({ password, newPassword }));
-          setSend(false);
-        }
-      });
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: " New Password don't match witch confirmation password❎.",
-        showConfirmButton: false,
-        timer: 2500,
-      });
-    }
-  };
+  // const formSubmit = async (formData) => {
+  //   const { password, newPassword, confirmPassword } = formData;
+  //   if (newPassword == confirmPassword) {
+  //     console.log('ChangePassword -> formSubmit: ', 'kaixo swal')
+
+  //     Swal.fire({
+  //       title: "Are you sure you want to change your password?",
+  //       icon: "warning!",
+  //       showCancelButton: true,
+  //       confirmButtonColor: "rgb(73, 193, 162)",
+  //       cancelButtonColor: "#d33",
+  //       confirmButtonText: "YES",
+  //       position: 'center',
+  //     }).then(async (result) => {
+  //       if (result.isConfirmed) {
+  //         setSend(true);
+  //         setRes(await changePasswordUser({ password, newPassword }));
+  //         setSend(false);
+  //       }
+  //     });
+  //   } else {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: " New Password don't match witch confirmation password❎.",
+  //       showConfirmButton: false,
+  //       timer: 2500,
+  //     });
+  //   }
+  // };
+
+  const formSubmitTest = () => {
+    Swal.fire({
+      title: "Kaixo",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "green",
+      cancelButtonColor: "black",
+      confirmButtonText: "YES",
+      position: "center",
+    })
+  }
+
+
+  formSubmitTest()
+
+  const formSubmit = (formData) => {
+    Swal.fire({
+      // title: "Are you sure you want to change your password?",
+      // icon: "warning!",
+      // showCancelButton: true,
+      // confirmButtonColor: "rgb(73, 193, 162)",
+      // cancelButtonColor: "#d33",
+      // confirmButtonText: "YES",
+      // position: 'center',
+    })
+  }
+
+
   //! --------------- USEEFFECT  que controla la gestion de errores ----------------------
   useEffect(() => {
     console.log(res);
