@@ -8,8 +8,8 @@ const useForgotPasswordError = (res, setForgetOk) => {
       setForgetOk(() => true);
       return Swal.fire({
         icon: "success",
-        title: "Change password ok",
-        text: "Send email with your new password ✅",
+        title: "Password changed correctly",
+        text: "Email sended with your new password",
         showConfirmButton: false,
         timer: 3000,
       });
@@ -18,8 +18,8 @@ const useForgotPasswordError = (res, setForgetOk) => {
     if (res?.data?.sendPassword == true && res?.data?.updateUser == false) {
       return Swal.fire({
         icon: "error",
-        title: "Error send incorrect email",
-        text: "We don't change your password, your email isn't valid ❎",
+        title: "Not valid email",
+        text: "Oops, we can’t change your password because your email isn’t valid",
         showConfirmButton: false,
         timer: 1500,
       });
@@ -56,7 +56,7 @@ const useForgotPasswordError = (res, setForgetOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "No update password,  ❎ Try again, please",
+      text: "Password not updated. Try again, please!",
       showConfirmButton: false,
       timer: 3000,
     });

@@ -28,7 +28,7 @@ const useUpdateError = (res, setChangeProfileDataOk) => {
     setChangeProfileDataOk(() => true);
     Swal.fire({
       icon: "success",
-      title: `Update data user✅`,
+      title: `User profile updated!`,
       text: ` Update: ${check} `,
       showConfirmButton: false,
       timer: 4000,
@@ -46,7 +46,7 @@ const useUpdateError = (res, setChangeProfileDataOk) => {
     });
     Swal.fire({
       icon: "error",
-      title: `Error update data user: ${error} ❎`,
+      title: `Error updating user: ${error} ❎`,
       text: "Please, try again.",
       showConfirmButton: false,
       timer: 1500,
@@ -59,7 +59,7 @@ const useUpdateError = (res, setChangeProfileDataOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Interval Server Error! Don't update user ❎ ",
+      text: "Internal Server Error! User not updated! ",
       showConfirmButton: false,
       timer: 1500,
     });

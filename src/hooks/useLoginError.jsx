@@ -9,7 +9,7 @@ const useLoginError = (res, setLoginOk, userlogin) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Interval Server Error ❎!",
+      text: "Internal Server Error ❎!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -29,7 +29,7 @@ const useLoginError = (res, setLoginOk, userlogin) => {
     setLoginOk(() => true);
     Swal.fire({
       icon: "success",
-      title: "Welcome to my Page",
+      title: "Hey there, welcome to my tech page!",
       text: "Login ok ✅",
       showConfirmButton: false,
       timer: 1500,
@@ -41,7 +41,7 @@ const useLoginError = (res, setLoginOk, userlogin) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Password dont match ❎",
+      text: "Password don't match!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -52,7 +52,7 @@ const useLoginError = (res, setLoginOk, userlogin) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Unregistered user ❎",
+      text: "Unregistered user!",
       showConfirmButton: false,
       timer: 1500,
     });

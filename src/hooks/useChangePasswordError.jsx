@@ -18,8 +18,8 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
   if (res?.data?.updateUser?.toString() == "false") {
     Swal.fire({
       icon: "error",
-      title: "Interval server error ❎.",
-      text: "Please, try again",
+      title: "Internal server error",
+      text: "Oops, let’s give it another shot!",
       showConfirmButton: false,
       timer: 2500,
     });
@@ -32,8 +32,8 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
   )
     Swal.fire({
       icon: "error",
-      title: "Interval server error ❎.",
-      text: "Please, try again",
+      title: "Internal server error",
+      text: "Oops, let’s give it another shot!",
       showConfirmButton: false,
       timer: 3000,
     });
@@ -44,7 +44,7 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Old password don't match,  ❎ Try again, please",
+      text: "Uh-oh, the old password doesn’t match. Let’s try again!",
       showConfirmButton: false,
       timer: 3000,
     });
@@ -55,7 +55,7 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Interval Server Error ❎!",
+      text: "Internal Server Error!",
       showConfirmButton: false,
       timer: 1500,
     });

@@ -8,7 +8,7 @@ const useUserError = (res, setRegisterOk) => {
     setRegisterOk(() => true);
     Swal.fire({
       icon: "success",
-      title: "Welcome to my Page 💌",
+      title: "Hey there, welcome to my tech page!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -20,7 +20,7 @@ const useUserError = (res, setRegisterOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "User already exist!❎",
+      text: "Looks like that user already exists. Try a different one!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -30,7 +30,7 @@ const useUserError = (res, setRegisterOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Sorry, internal error ❎",
+      text: "Internal server error!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -47,7 +47,7 @@ const useUserError = (res, setRegisterOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Sorry choose another name ❎",
+      text: "That name is taken. Let’s try another one!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -58,7 +58,7 @@ const useUserError = (res, setRegisterOk) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Min 8 characters, 1 upper case, 1 lower case and a special character ❎",
+      text: "Make sure your password has at least 8 characters, including an uppercase, a lowercase, and a special character.",
       showConfirmButton: false,
       timer: 1500,
     });

@@ -6,7 +6,7 @@ const useResendCodeError = (res) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Interval Server Error! Don't send email ❎!",
+      text: "Internal Server Error!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -15,7 +15,7 @@ const useResendCodeError = (res) => {
   if (res?.status == 200)
     Swal.fire({
       icon: "success",
-      title: "Ok send email with your code ✅",
+      title: "We’ve sent an email with your code. Check it out!",
       showConfirmButton: false,
       timer: 1500,
     });

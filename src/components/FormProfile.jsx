@@ -21,12 +21,12 @@ const FormProfile = () => {
   //! --------- funcion que controla el formulario-----------------------
   const formSubmit = async (formData) => {
     Swal.fire({
-      title: "Are you sure you want to change your data profile?",
+      title: "Ready to switch up your profile details?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "rgb(73, 193, 162)",
       cancelButtonColor: "#d33",
-      confirmButtonText: "YES",
+      confirmButtonText: "Yes",
     }).then(async (result) => {
       if (result.isConfirmed) {
         const inputfile = document.getElementById("file-upload").files;

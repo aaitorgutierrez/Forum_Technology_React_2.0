@@ -21,12 +21,12 @@ const ChangePassword2 = () => {
             console.log('ChangePassword -> formSubmit: ', 'kaixo swal')
 
             Swal.fire({
-                title: "Are you sure you want to change your password?",
+                title: "You really wanna reset your password?",
                 icon: "warning!",
                 showCancelButton: true,
                 confirmButtonColor: "rgb(73, 193, 162)",
                 cancelButtonColor: "#d33",
-                confirmButtonText: "YES",
+                confirmButtonText: "Yes",
                 position: 'center',
             }).then(async (result) => {
                 if (result.isConfirmed) {
@@ -38,7 +38,7 @@ const ChangePassword2 = () => {
         } else {
             Swal.fire({
                 icon: "error",
-                title: " New Password don't match witch confirmation password❎.",
+                title: "Looks like the passwords aren’t the same. Give it another go!",
                 showConfirmButton: false,
                 timer: 2500,
             });
@@ -51,10 +51,10 @@ const ChangePassword2 = () => {
         useChangePasswordError(res, setChangePasswordOk);
     }, [res]);
 
-    useEffect(() => {
-        console.log("Test Swal alert");
-        SwalTest()
-    }, []);
+    // useEffect(() => {
+    //     console.log("Test Swal alert");
+    //     SwalTest()
+    // }, []);
 
     //! ---------------- LOS CONDICIONALES CON LOS ESTADOS DE NAVEGACION --------------------
 

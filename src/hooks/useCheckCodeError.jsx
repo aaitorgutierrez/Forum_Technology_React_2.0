@@ -9,7 +9,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Interval Server Error ❎!",
+      text: "Internal Server Error ❎!",
       showConfirmButton: false,
       timer: 1500,
     });
@@ -20,7 +20,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
     Swal.fire({
       icon: "error",
       title: "No correct Code ❎.",
-      text: "Your user is delete. Register again, please.",
+      text: "Oops, your user is no longer active. Let’s get you set up again!",
       showConfirmButton: false,
       timer: 2500,
     });
@@ -51,7 +51,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
   if (res?.data?.testCheckOk?.toString() == "false") {
     Swal.fire({
       icon: "error",
-      title: "Interval server error ❎.",
+      title: "Internal server error ❎.",
       text: "No delete user. Try again, please.",
       showConfirmButton: false,
       timer: 2500,
@@ -62,7 +62,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
   if (res?.response?.status == 404)
     Swal.fire({
       icon: "error",
-      title: "Interval server error ❎.",
+      title: "Internal server error ❎.",
       text: "No delete user. Try again, please.",
       showConfirmButton: false,
       timer: 1500,
