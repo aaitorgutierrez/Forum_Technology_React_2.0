@@ -14,11 +14,12 @@ export const CardMobileDev = ({ mobileDev }) => {
         <div className="mobileDev-Info-tabla-p">
           <p>
             {" "}
-            OS <div className="mobileDev-Info-tabla-OS">{mobileDev.OS}</div>
+            OS
+            <div className="mobileDev-Info-tabla-OS">{mobileDev.OS}</div>
           </p>
           <p>
             {" "}
-            VersionOS
+            &nbsp;VersionOS
             <div className="mobileDev-Info-tabla-versionOS">
               {mobileDev.versionOS}
             </div>
