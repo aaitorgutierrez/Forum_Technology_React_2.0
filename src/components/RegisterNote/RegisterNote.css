@@ -17,7 +17,7 @@
   height: 14vh;
 }
 
-.userWelcome-info-text {
+.registerNote-info-text {
   font-size: 16px;
   padding: 0 100px;
   margin-top: 30px;
@@ -67,7 +67,7 @@
     color: var(--secondaryColor);
   }
 
-  .userWelcome-info-text {
+  .registerNote-info-text {
     font-size: 12px;
     padding: 0 7px;
     margin-top: 5px;

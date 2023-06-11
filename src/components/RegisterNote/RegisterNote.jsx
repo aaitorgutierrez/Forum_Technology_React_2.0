@@ -14,7 +14,7 @@ const RegisterNote = () => {
       <div className="registerNote-logo">
         <h3 className="titleWeb">Digital Nexus</h3>
       </div>
-      <p className="userWelcome-info-text">
+      <p className="registerNote-info-text">
         Our site is full of great resources and information, so feel free to
         explore. Explore our site, full of valuable resources and information.
         Discover a world of knowledge and inspiration at your fingertips. Feel

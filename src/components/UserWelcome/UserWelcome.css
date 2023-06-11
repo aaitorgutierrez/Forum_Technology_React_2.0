@@ -1,18 +1,33 @@
 .userWelcome-container {
-  width: 55vw;
-  height: 60vh;
+  width: 60vw;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   background-color: #e3e4e5;
   border: 1px solid black;
+  text-align: center;
   padding: 1rem;
-  gap: 0.5rem;
+  margin: 1rem;
+  gap: 1rem;
 }
 
+/* .userWelcome-welcome-text {
+  font-size: 3.4vw;
+  border: 0px solid red;
+} */
+
 .userWelcome-welcome-text {
+  font-size: 30px;
+  border: 0px solid red;
+}
+
+/* .userWelcome-Digital-Nexus-text {
+  font-size: 2.5vw;
+} */
+
+.userWelcome-Digital-Nexus-text {
   font-size: 25px;
 }
 
@@ -21,17 +36,12 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  border: 0px solid red;
 }
 
 .userWelcome-info-text {
-  font-size: 20px;
-}
-
-.userWelcome-login-btn {
-  width: 55%;
-  background-color: var(--mainColor);
-  color: var(--textColor);
-  cursor: pointer;
+  font-size: 25px;
+  border: 0px solid red;
 }
 
 @media only screen and (max-width: 600px) {
@@ -42,4 +52,18 @@
   .userWelcome-welcome-text {
     font-size: 25px;
   }
+
+  .userWelcome-info-text {
+    font-size: 20px;
+  }
+
+  /* .userWelcome-info-text {
+    font-weight: 200;
+    font-size: 2.5vw;
+    border: 0px solid red;
+  } */
+
+  /* .userWelcome-Digital-Nexus-text {
+    font-size: 4.5vw;
+  } */
 }
