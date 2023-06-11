@@ -41,6 +41,9 @@ const Login = () => {
         <p>We are happy to see you again 💌</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="email_container form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              email
+            </label>
             <input
               className="input_user"
               type="email"
@@ -49,11 +52,11 @@ const Login = () => {
               autoComplete="false"
               {...register("email", { required: true })}
             />
-            <label htmlFor="custom-input" className="custom-placeholder">
-              email
-            </label>
 
             <div className="password_container form-group">
+              <label htmlFor="custom-input" className="custom-placeholder">
+                password
+              </label>
               <input
                 className="input_user"
                 type="password"
@@ -62,9 +65,6 @@ const Login = () => {
                 autoComplete="false"
                 {...register("password", { required: true })}
               />
-              <label htmlFor="custom-input" className="custom-placeholder">
-                password
-              </label>
             </div>
           </div>
 
@@ -73,16 +73,16 @@ const Login = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#2f7a67" : "#2f7a67" }}
             >
-              LOGIN
+              <div className="btn_signin">SIGN IN</div>
             </button>
           </div>
           <p className="bottom-text">
             <small>
               Have you forgotten the password?
               <Link to="/forgotpassword" className="anchorCustom">
-                Change password
+                &nbsp;&nbsp;Change password
               </Link>
             </small>
           </p>
@@ -90,7 +90,10 @@ const Login = () => {
       </div>
       <div className="footerForm">
         <p className="parrafoLogin">
-          Are you not registered? <Link to="/register">Register Here</Link>
+          Are you not registered?{" "}
+          <Link className="parrafoRegisterHere" to="/register">
+            Register Here
+          </Link>
         </p>
       </div>
     </>

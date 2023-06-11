@@ -1,1 +1,12 @@
+.anchorCustom:hover {
+  color: white;
+}
 
+.parrafoRegisterHere:hover {
+  color: black;
+}
+
+.btn_signin:hover {
+  color: black;
+  font-weight: 700;
+}
