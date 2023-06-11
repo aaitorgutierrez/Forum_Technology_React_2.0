@@ -9,7 +9,7 @@ const useChangePasswordError = (res, setChangePasswordOk) => {
       title: "Change password ok ✅",
       showConfirmButton: false,
       timer: 1500,
-      position: 'center',
+      position: "center",
     });
   }
 

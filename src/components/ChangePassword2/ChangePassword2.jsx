@@ -51,11 +51,6 @@ const ChangePassword2 = () => {
     useChangePasswordError(res, setChangePasswordOk);
   }, [res]);
 
-  // useEffect(() => {
-  //     console.log("Test Swal alert");
-  //     SwalTest()
-  // }, []);
-
   //! ---------------- LOS CONDICIONALES CON LOS ESTADOS DE NAVEGACION --------------------
 
   if (changePasswordOk) {
@@ -124,19 +119,6 @@ const ChangePassword2 = () => {
       </div>
     </>
   );
-};
-
-const SwalTest = () => {
-  Swal.fire({
-    title: "SwalTest",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonColor: "green",
-    cancelButtonColor: "black",
-    confirmButtonText: "YES",
-    position: "center",
-    width: "300px",
-  });
 };
 
 export default ChangePassword2;

@@ -43,7 +43,10 @@ const Register = () => {
     <>
       <div className="form-wrap">
         <h1>Sign Up</h1>
-        <p>Get started for free in less time than it takes to make a cup of coffee 😊</p>
+        <p>
+          Get started for free in less time than it takes to make a cup of
+          coffee 😊
+        </p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
             <label htmlFor="custom-input" className="custom-placeholder">

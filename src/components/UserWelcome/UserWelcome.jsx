@@ -1,6 +1,6 @@
 import { TbPlant2 } from "react-icons/tb";
 import { useAuth } from "../../contexts/authContext";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 import "./UserWelcome.css";
 
@@ -10,7 +10,6 @@ const UserWelcome = () => {
 
   return (
     <div className="userWelcome-container">
-
       <TbPlant2 size={isLargeScreen ? 160 : 80} />
 
       <p className="userWelcome-welcome-text">

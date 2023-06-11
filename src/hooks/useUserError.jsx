@@ -1,4 +1,3 @@
-import { Navigate, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const useUserError = (res, setRegisterOk) => {
@@ -39,11 +38,7 @@ const useUserError = (res, setRegisterOk) => {
 
   //! error --> nombre de usuario ya exista // error ---> correo ya existe
 
-  if (
-    res?.response?.data?.includes(
-      "Fail registering user"
-    )
-  )
+  if (res?.response?.data?.includes("Fail registering user"))
     Swal.fire({
       icon: "error",
       title: "Oops...",

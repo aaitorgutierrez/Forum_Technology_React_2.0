@@ -57,30 +57,27 @@ const useLoginError = (res, setLoginOk, userlogin) => {
       timer: 1500,
     });
 
+  //! ---------- Wrong Password
 
-//! ---------- Wrong Password
+  if (res?.response?.data?.includes("Wrong password, please try again"))
+    Swal.fire({
+      icon: "error",
+      title: "Wrong Password",
+      text: "The password you introduced is incorrect. Please, try again",
+      showConfirmButton: false,
+      timer: 1500,
+    });
 
-if (res?.response?.data?.includes("Wrong password, please try again"))
-Swal.fire({
-  icon: "error",
-  title: "Wrong Password",
-  text: "The password you introduced is incorrect. Please, try again",
-  showConfirmButton: false,
-  timer: 1500,
-});
+  //! ---------- Wrong Email
 
-
-//! ---------- Wrong Email
-
-if (res?.response?.data?.includes("Wrong email address, please try again"))
-Swal.fire({
-  icon: "error",
-  title: "Wrong Email",
-  text: "The email you introduced is incorrect. Please, try again",
-  showConfirmButton: false,
-  timer: 1500,
-});
+  if (res?.response?.data?.includes("Wrong email address, please try again"))
+    Swal.fire({
+      icon: "error",
+      title: "Wrong Email",
+      text: "The email you introduced is incorrect. Please, try again",
+      showConfirmButton: false,
+      timer: 1500,
+    });
 };
-
 
 export default useLoginError;

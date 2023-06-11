@@ -13,7 +13,7 @@ const MobileDevs = () => {
 
 const ShowTitleMsgBigScreen = () => (
   <h1>
-    Enjoy all our awesome <u>Brands</u> and don't forget to follow them!
+    Enjoy all our awesome <u>Brands</u> and do not forget to follow them!
   </h1>
 );
 const ShowTitleMsgSmallScreen = () => (

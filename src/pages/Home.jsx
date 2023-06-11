@@ -13,4 +13,6 @@ export const Home = () => {
   );
 };
 
-{/* <h1 className="titleHome">Bienvenido {user.user}</h1> */ }
+{
+  /* <h1 className="titleHome">Bienvenido {user.user}</h1> */
+}

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { TbPlant2 } from "react-icons/tb";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 import "./RegisterNote.css";
 
 const RegisterNote = () => {
@@ -23,8 +23,8 @@ const RegisterNote = () => {
       <p className="registerNote-info-text">
         Our site is full of great resources and information, so feel free to
         explore. Check our site, full of valuable resources and information.
-        Discover a world of knowledge and inspiration at your fingertips.
-        Go dive in and satisfy your curiosity.
+        Discover a world of knowledge and inspiration at your fingertips. Go
+        dive in and satisfy your curiosity.
       </p>
 
       <p className="registerNote-please-text">
@@ -39,10 +39,7 @@ const RegisterNote = () => {
           Go to Register
         </button>
 
-        <button
-          className="registerNote-btn"
-          onClick={() => navigate("/login")}
-        >
+        <button className="registerNote-btn" onClick={() => navigate("/login")}>
           Go to Login
         </button>
       </div>

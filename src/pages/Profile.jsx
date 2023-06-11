@@ -1,14 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Profile.css";
 import FormProfile from "../components/FormProfile";
-import ChangePassword from "../components/ChangePassword";
 import useDeleteUser from "../hooks/useDeleteUser";
 import { useAuth } from "../contexts/authContext";
 import ChangePassword2 from "../components/ChangePassword2/ChangePassword2";
 
 const Profile = () => {
   const [changeRender, setChangeRender] = useState(true);
-  const { user, setUser } = useAuth();
+  const { setUser } = useAuth();
 
   return (
     <>
@@ -23,15 +22,10 @@ const Profile = () => {
           Delete
         </button>
       </div>
-      {/* Igor Start */}
-      {/* <div className="fluidContainerProfile">
-        {changeRender ? <FormProfile /> : <ChangePassword />}
-      </div> */}
 
       <div className="fluidContainerProfile">
         {changeRender ? <FormProfile /> : <ChangePassword2 />}
       </div>
-      {/* Igor End */}
     </>
   );
 };

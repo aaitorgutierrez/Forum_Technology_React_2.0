@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useAuth } from "../contexts/authContext";
 import FigureUser from "./FigureUser";
@@ -83,7 +83,6 @@ const FormProfile = () => {
                 defaultValue={defaultData?.name}
                 {...register("name", { required: true })}
               />
-
             </div>
             <Uploadfile />
             <div className="btn_container">

@@ -14,7 +14,7 @@ const Apps = () => {
 
 const ShowTitleMsgBigScreen = () => (
   <h1>
-    Enjoy all our awesome <u>Apps</u> and don't forget to follow them!
+    Enjoy all our awesome <u>Apps</u> and do not forget to follow them!
   </h1>
 );
 

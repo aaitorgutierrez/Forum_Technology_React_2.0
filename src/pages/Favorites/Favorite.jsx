@@ -1,4 +1,3 @@
-import React from "react";
 import UserFavoritesMobileDevsList from "../../components/UserFavoritesMobileDevsList/UserFavoritesMobileDevsList";
 import UserFavoritesAppsList from "../../components/UserFavoritesAppsList/UserFavoritesAppsList";
 import { useState } from "react";
