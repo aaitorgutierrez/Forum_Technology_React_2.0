@@ -31,6 +31,33 @@
   margin-top: 0.5rem;
 }
 
+.mobileDev-Info-tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileDev-Info-tabla-p {
+  display: flex;
+
+  gap: 21px;
+}
+
+.mobileDev-Info-tabla-OS {
+  margin-left: px;
+  color: white;
+}
+
+.mobileDev-Info-tabla-versionOS {
+  margin-left: px;
+  color: white;
+}
+
+.mobileDev-Info-tabla-language {
+  margin-left: px;
+  color: white;
+}
+
 .button-Holder {
   width: 70%;
   display: flex;

@@ -61,7 +61,7 @@
   padding: 1rem;
 }
 
-.registerNote-login-btn:hover {
+.registerNote-btn:hover {
   color: var(--secondaryColor);
 }
 
