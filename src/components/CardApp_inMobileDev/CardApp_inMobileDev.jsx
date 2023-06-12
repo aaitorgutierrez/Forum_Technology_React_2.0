@@ -23,7 +23,6 @@ const showAppInfo = (app) => {
         <p>{app.appSize} Mbytes</p>
         <h5>{app.description}</h5>
       </div>
-      <div className="spinner"></div>
     </>
   );
 };

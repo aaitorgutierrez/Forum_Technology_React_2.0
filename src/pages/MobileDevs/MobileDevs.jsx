@@ -6,6 +6,8 @@ const MobileDevs = () => {
   return (
     <div className="outletContainer">
       {isLargeScreen ? <ShowTitleMsgBigScreen /> : <ShowTitleMsgSmallScreen />}
+
+      <div className="spinner"></div>
       <MobileDevList />
     </div>
   );
