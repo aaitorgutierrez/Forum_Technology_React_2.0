@@ -14,14 +14,17 @@ export const CardApp_inMobileDev = ({ app }) => (
 const showAppInfo = (app) => {
   // console.log("showAppInfo -> app: ", app);
   return (
-    <div className="cardAppInMobileDev-Info">
-      {/* <p>app id: {app._id}</p> */}
-      {/* <p>{app.appName}</p> */}
-      <p>{app.category}</p>
-      <p>{app.codeLanguages}</p>
-      <p>{app.appSize} Mbytes</p>
-      <h5>{app.description}</h5>
-    </div>
+    <>
+      <div className="cardAppInMobileDev-Info">
+        {/* <p>app id: {app._id}</p> */}
+        {/* <p>{app.appName}</p> */}
+        <p>{app.category}</p>
+        <p>{app.codeLanguages}</p>
+        <p>{app.appSize} Mbytes</p>
+        <h5>{app.description}</h5>
+      </div>
+      <div className="spinner"></div>
+    </>
   );
 };
 

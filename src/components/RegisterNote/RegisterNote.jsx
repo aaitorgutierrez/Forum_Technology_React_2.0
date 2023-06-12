@@ -36,11 +36,11 @@ const RegisterNote = () => {
           className="registerNote-btn"
           onClick={() => navigate("/register")}
         >
-          Go to Register
+          GO TO REGISTER
         </button>
 
         <button className="registerNote-btn" onClick={() => navigate("/login")}>
-          Go to Login
+          GO TO LOGIN
         </button>
       </div>
     </div>

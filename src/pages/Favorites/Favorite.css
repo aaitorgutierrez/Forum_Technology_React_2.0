@@ -32,11 +32,15 @@
 }
 
 .btn-favoriteApp:hover {
-  color: #37a08e;
+  color: gray;
 }
 
 .btn-favoriteMarca:hover {
-  color: #37a08e;
+  color: gray;
+}
+
+.favorite-container-card {
+  min-height: 50vh;
 }
 
 @media only screen and (max-width: 870px) {

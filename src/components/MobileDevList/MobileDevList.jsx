@@ -3,16 +3,18 @@ import { useState, useEffect } from "react";
 import { mobileDev_getAll } from "../../services/API_proyect/mobileDev.service";
 import CardMobileDev from "../CardMobileDev/CardMobileDev";
 import "./MobileDevList.css";
+// import { Spinner } from "../Spinner/Spinner";
 
 const MobileDevList = () => {
   const [mobileDevList, setMobileDevList] = useState([]);
 
   useEffect(() => {
+    // document.querySelector(".spinner").innerHTML = Spinner();
     mobileDev_getAll()
       .then((mobileDev) => setMobileDevList(mobileDev))
       .catch((error) => {
         console.log("Error fetching data from back end ", error);
-
+        // document.querySelector(".spinner").innerHTML = "";
         return error;
       });
   }, []);

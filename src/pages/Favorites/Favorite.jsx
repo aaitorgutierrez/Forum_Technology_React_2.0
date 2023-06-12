@@ -25,7 +25,7 @@ const Favorite = () => {
           Apps
         </button>
       </div>
-      <div>
+      <div className="favorite-container-card">
         {showMobileDevFavorite ? (
           <UserFavoritesMobileDevsList />
         ) : (
