@@ -12,21 +12,19 @@ export const CardApp = ({ app }) => {
       {/* <p> {app.appName}</p> */}
       <div className="app-Info-tabla">
         <div className="app-Info-tabla-p">
-          <p>
+          <div className="app-Info-tabla-Titulo-Category">
             {" "}
-            Category
-            <div className="app-Info-tabla-Category">{app.category}</div>
-          </p>
-          <p>
-            Languages
-            <div className="mobileDev-Info-tabla-Languages">
-              {app.codeLanguages}
-            </div>
-          </p>
-          <p>
-            Size
-            <div className="app-Info-tabla-appSize">{app.appSize} Mbytes</div>
-          </p>
+            <u>Category</u>
+            <p className="app-Info-tabla-Category">{app.category}</p>
+          </div>
+          <div className="app-Info-tabla-Titulo-Languages">
+            <u>Languages</u>
+            <p className="app-Info-tabla-Languages">{app.codeLanguages}</p>
+          </div>
+          <div className="app-Info-tabla-Titulo-Size">
+            <u>Size</u>
+            <p className="app-Info-tabla-appSize">{app.appSize} Mbytes</p>
+          </div>
         </div>
       </div>
 

@@ -12,22 +12,22 @@ export const CardMobileDev = ({ mobileDev }) => {
       <img src={mobileDev.image} alt={`mobileDev's ${mobileDev.brand} pic`} />
       <div className="mobileDev-Info-tabla">
         <div className="mobileDev-Info-tabla-p">
-          <p>
-            OS
-            <div className="mobileDev-Info-tabla-OS">{mobileDev.OS}</div>
-          </p>
-          <p>
-            VersionOS
-            <div className="mobileDev-Info-tabla-versionOS">
+          <div className="mobileDev-Info-tabla-Titulo-OS">
+            <u>OS</u>
+            <p className="mobileDev-Info-tabla-OS">{mobileDev.OS}</p>
+          </div>
+          <div className="mobileDev-Info-tabla-Titulo-VersionOS">
+            <u>VersionOS</u>
+            <p className="mobileDev-Info-tabla-versionOS">
               {mobileDev.versionOS}
-            </div>
-          </p>
-          <p>
-            Language
-            <div className="mobileDev-Info-tabla-language">
+            </p>
+          </div>
+          <div className="mobileDev-Info-tabla-Titulo-Language">
+            <u>Language</u>
+            <p className="mobileDev-Info-tabla-language">
               {mobileDev.language}
-            </div>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
       <h5>{mobileDev.description}</h5>

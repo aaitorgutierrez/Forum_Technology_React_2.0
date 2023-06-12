@@ -7,7 +7,12 @@
 
 .app-Info > h5 {
   text-align: justify;
-  padding: 0 12px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  width: 90%;
+  height: 30%;
 }
 
 .app-Info {
@@ -15,40 +20,70 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 340px;
-  height: 340px;
+  width: 390px;
+  height: 500px;
   border: 5px solid #b5b2b2;
   border-radius: 1rem;
-  padding: 0rem;
+  padding: 1.8rem 0.9rem;
   background-color: #e3e4e5;
   color: black;
+  gap: 1rem;
 }
 
 .app-Info-tabla {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #b5b2b2;
+  border-radius: 5px;
+  padding: 0.6rem;
 }
 
 .app-Info-tabla-p {
   display: flex;
   gap: 21px;
+}
+
+.app-Info-tabla-Titulo-Category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.app-Info-tabla-Titulo-Languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.app-Info-tabla-Titulo-Size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: 900;
 }
 
 .app-Info-tabla-Category {
   margin-left: px;
-  color: var(--secondaryColor);
+  color: black;
+  font-weight: 300;
 }
 
-.mobileDev-Info-tabla-Languages {
+.app-Info-tabla-Languages {
   margin-left: px;
-  color: var(--secondaryColor);
+  color: black;
+  font-weight: 300;
 }
 
 .app-Info-tabla-appSize {
   margin-left: px;
-  color: var(--secondaryColor);
+  color: black;
+  font-weight: 300;
 }
 
 .app-Info > img {
@@ -59,17 +94,20 @@
 }
 
 .button-App {
-  width: 120px;
-  height: 32px;
+  width: 160px;
   border-radius: 5px;
   cursor: pointer;
   background-color: var(--mainColor);
   color: var(--textColor);
   font-size: medium;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .button-App:hover {
-  color: var(--secondaryColor);
+  background-color: var(--background-color-button-hover);
+  color: var(--color-button-hover);
+  font-weight: var(--color-font-weight-hover);
 }
 
 /* .appInfo {

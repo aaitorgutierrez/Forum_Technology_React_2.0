@@ -19,6 +19,10 @@ body {
   --textColor: #eee;
   --page-background-color: white;
   --profile-background-color: #2f7a67;
+  --background-color-button-hover: White;
+  --color-button-hover: black;
+  --color-font-weight-hover: 900;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,5 +55,5 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 75px 0;
+  padding: 25px 0;
 }
