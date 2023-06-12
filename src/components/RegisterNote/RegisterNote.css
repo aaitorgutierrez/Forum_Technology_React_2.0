@@ -38,6 +38,7 @@
 
 .registerNote-Digital-Nexus-text {
   font-size: 25px;
+  color: var(--background-color-button-login);
 }
 
 .registerNote-register-login-btns {

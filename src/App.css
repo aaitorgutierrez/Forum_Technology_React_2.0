@@ -15,13 +15,17 @@ body {
 #root {
   --mainColor: #1b2430;
   --mainColorLight: #5767aa;
-  --secondaryColor: green;
+  --secondaryColor: #b5b2b2;
   --textColor: #eee;
   --page-background-color: white;
-  --profile-background-color: #2f7a67;
+  --profile-background-color: #b5b2b2;
   --background-color-button-hover: White;
   --color-button-hover: black;
   --color-font-weight-hover: 900;
+  --backgroung-letter: #b5b2b2;
+  --background-letter-secund-color: #e3e4e5;
+  --text-color--hover: black;
+  --background-color-button-login: #49c1a2;
 
   display: flex;
   justify-content: center;
@@ -41,7 +45,7 @@ main {
   width: 100%;
   padding: 10px;
   margin-top: 25px;
-  background: #2f7a67;
+  background: var(--background-color-button-login);
   color: #fff;
   cursor: pointer;
   border: #2f7a67 1px solid;

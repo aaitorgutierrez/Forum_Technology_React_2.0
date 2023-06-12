@@ -73,7 +73,11 @@ const Login = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#2f7a67" : "#2f7a67" }}
+              style={{
+                background: send
+                  ? "#2f7a67"
+                  : "var(--background-color-button-login)",
+              }}
             >
               <div className="btn_signin">SIGN IN</div>
             </button>

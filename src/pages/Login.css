@@ -2,11 +2,15 @@
   color: white;
 }
 
+.parrafoRegisterHere {
+  color: #1e6f5b;
+}
+
 .parrafoRegisterHere:hover {
   color: black;
 }
 
 .btn_signin:hover {
-  color: black;
+  color: var(--textColor);
   font-weight: 700;
 }

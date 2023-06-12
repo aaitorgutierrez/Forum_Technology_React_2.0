@@ -17,9 +17,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--profile-background-color);
+  background-color: var(--mainColor);
   max-width: 1000px;
   margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.form-wrap {
   border-radius: 20px;
 }
 

@@ -72,7 +72,7 @@ const FormProfile = () => {
           <form onSubmit={handleSubmit(formSubmit)}>
             <div className="user_container form-group">
               <label htmlFor="custom-input" className="custom-placeholder">
-                username
+                name
               </label>
               <input
                 className="input_user"
@@ -92,7 +92,11 @@ const FormProfile = () => {
                 disabled={send}
                 //style={{ background: send ? "#49c1a388" : "#49c1a2" }}
                 //style={{ background: send ? "#008000" : "#37A08E" }}
-                style={{ background: send ? "#008000" : "#2f7a67" }}
+                style={{
+                  background: send
+                    ? "#008000"
+                    : "var(--background-color-button-login)",
+                }}
               >
                 CHANGE PROFILE
               </button>
