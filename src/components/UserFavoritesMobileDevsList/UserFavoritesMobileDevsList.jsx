@@ -14,30 +14,14 @@ const UserFavoritesMobileDevsList = () => {
   }, []);
 
   return (
-    <>
-      {/* {showWelcome(userDataFromDB)} */}
-      {showMobileDevs(userDataFromDB.mobileDevs)}
-    </>
+    <div className="userFavoritesMobileDevs-Container">
+      {mobileDevs.map(mobileDev =>
+        <div key={mobileDev._id}>
+          <CardMobileDev mobileDev={mobileDev} />
+        </div>
+      )}
+    </div>
   );
 };
-
-// const showWelcome = (userDataFromDB) => {
-//   console.log("userDataFromDB: ", userDataFromDB);
-//   const welcome = `Hi, ${userDataFromDB.name}!`;
-
-//   return <h1>{welcome}</h1>;
-// };
-
-const showMobileDevs = (mobileDevs) => (
-  <div className="userFavoritesMobileDevs-Container">
-    {mobileDevs.map(showMobileDev)}
-  </div>
-);
-
-const showMobileDev = (mobileDev) => (
-  <div key={mobileDev._id}>
-    <CardMobileDev mobileDev={mobileDev} />
-  </div>
-);
 
 export default UserFavoritesMobileDevsList;

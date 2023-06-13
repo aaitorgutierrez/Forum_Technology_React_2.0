@@ -16,19 +16,14 @@ const UserFavoritesAppsList = () => {
   return (
     <>
       {/* {showWelcome(userDataFromDB)} */}
-      {showApps(userDataFromDB.apps)}
+      <div className="userFavoritesApps-Container">{apps.map(app =>
+        <div key={app._id}>
+          <CardApp app={app} />
+        </div>
+      )}
+      </div>
     </>
   );
 };
-
-const showApps = (apps) => (
-  <div className="userFavoritesApps-Container">{apps.map(showApp)}</div>
-);
-
-const showApp = (app) => (
-  <div key={app._id}>
-    <CardApp app={app} />
-  </div>
-);
 
 export default UserFavoritesAppsList;

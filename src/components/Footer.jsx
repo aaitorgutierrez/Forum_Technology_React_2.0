@@ -8,19 +8,14 @@ const Footer = () => {
       <div className="whiteContainer"></div>
       <footer>
         {isLargeScreen ? (
-          <ShowTitleMsgBigScreen />
+          <h4>Powered by cutting-edge technology and 💖 for innovation</h4>
         ) : (
-          <ShowTitleMsgSmallScreen />
+          <h4> Passion 💖 for innovation</h4>
         )}
         <h4 className="footerText"> Champion Group ✌</h4>
       </footer>
     </>
   );
 };
-
-const ShowTitleMsgBigScreen = () => (
-  <h4>Powered by cutting-edge technology and 💖 for innovation</h4>
-);
-const ShowTitleMsgSmallScreen = () => <h4> Passion 💖 for innovation</h4>;
 
 export default Footer;

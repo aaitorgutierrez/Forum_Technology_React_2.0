@@ -12,6 +12,7 @@ const MobileDevList = () => {
     setSent(true);
     const data = await mobileDev_getAll();
     setSent(false);
+
     setMobileDevList(data);
   };
   useEffect(() => {

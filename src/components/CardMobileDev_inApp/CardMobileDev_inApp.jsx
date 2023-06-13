@@ -8,12 +8,6 @@ export const CardMobileDev = ({ mobileDev }) => (
       src={mobileDev.image}
       alt={`mobileDev's ${mobileDev.brand} pic`}
     />
-    {showMobileDevInfo(mobileDev)}
-  </div>
-);
-
-const showMobileDevInfo = (mobileDev) => {
-  return (
     <div className="cardMobileDevInApp-Info">
       {/* <p>app id: {app._id}</p> */}
       {/* <p>{mobileDev.brand}</p> */}
@@ -22,7 +16,7 @@ const showMobileDevInfo = (mobileDev) => {
       <p>{mobileDev.language}</p>
       <h5>{mobileDev.description}</h5>
     </div>
-  );
-};
+  </div>
+);
 
 export default CardMobileDev;

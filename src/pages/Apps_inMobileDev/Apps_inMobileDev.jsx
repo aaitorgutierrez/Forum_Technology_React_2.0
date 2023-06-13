@@ -23,31 +23,23 @@ const Apps_inMobileDev = () => {
 
   return (
     <div className="outletContainer">
-      {isLargeScreen ? <ShowTitleMsgBigScreen /> : <ShowTitleMsgSmallScreen />}
-      {showApps(mobileDev.apps)}
+      {isLargeScreen ?
+        <h1>
+          Enjoy all our awesome <u>Apps</u> included in our Brands!
+        </h1>
+        :
+        <h1>
+          <u>Apps</u> in our Brands!
+        </h1>
+      }
+      <div className="appsInMobileDev-Container">{mobileDev.apps.map((app) => (
+        <div key={app._id}>
+          <CardApp_inMobileDev app={app} />
+        </div>
+      )
+      )}</div>
     </div>
   );
 };
-
-const showApps = (apps) => (
-  <div className="appsInMobileDev-Container">{apps.map(showApp)}</div>
-);
-
-const showApp = (app) => (
-  <div key={app._id}>
-    <CardApp_inMobileDev app={app} />
-  </div>
-);
-
-const ShowTitleMsgBigScreen = () => (
-  <h1>
-    Enjoy all our awesome <u>Apps</u> included in our Brands!
-  </h1>
-);
-const ShowTitleMsgSmallScreen = () => (
-  <h1>
-    <u>Apps</u> in our Brands!
-  </h1>
-);
 
 export default Apps_inMobileDev;
