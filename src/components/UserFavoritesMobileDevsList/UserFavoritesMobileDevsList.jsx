@@ -15,7 +15,7 @@ const UserFavoritesMobileDevsList = () => {
 
   return (
     <div className="userFavoritesMobileDevs-Container">
-      {mobileDevs.map(mobileDev =>
+      {userDataFromDB.mobileDevs.map(mobileDev =>
         <div key={mobileDev._id}>
           <CardMobileDev mobileDev={mobileDev} />
         </div>
