@@ -6,4 +6,5 @@
   gap: 1.4rem;
   background-color: var(page-background-color);
   padding-top: 1.5rem;
+  min-height: 70vh;
 }

@@ -21,12 +21,6 @@ const UserFavoritesAppsList = () => {
   );
 };
 
-// const showWelcome = (userDataFromDB) => {
-//   const welcome = `Hi, ${userDataFromDB.name}!`;
-
-//   return <h1>{welcome}</h1>;
-// };
-
 const showApps = (apps) => (
   <div className="userFavoritesApps-Container">{apps.map(showApp)}</div>
 );
